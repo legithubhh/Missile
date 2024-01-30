@@ -119,7 +119,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu11"
+					"fragment" : "-std=gnu11"
 				},
 				{
 					"backtrace" : 7,
@@ -275,6 +275,7 @@
 			},
 			"sourceIndexes" : 
 			[
+				10,
 				11,
 				12,
 				13,
@@ -288,8 +289,10 @@
 				21,
 				22,
 				23,
-				24,
-				25,
+				87,
+				88,
+				89,
+				90,
 				91,
 				92,
 				93,
@@ -307,41 +310,33 @@
 				105,
 				106,
 				107,
-				108,
-				109,
-				110,
 				111,
-				112,
 				116,
-				121,
+				117,
+				118,
+				120,
 				122,
 				123,
-				125,
-				127,
-				128,
+				142,
+				143,
+				145,
+				146,
 				147,
 				148,
+				149,
 				150,
-				151,
 				152,
-				153,
 				154,
-				155,
-				157,
-				159,
-				161,
-				186,
-				187,
-				188,
-				199
+				156,
+				181,
+				182,
+				183,
+				194
 			]
 		},
 		{
 			"compileCommandFragments" : 
 			[
-				{
-					"fragment" : "-g"
-				},
 				{
 					"backtrace" : 7,
 					"fragment" : "-mfloat-abi=hard"
@@ -496,14 +491,14 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				26
+				24
 			]
 		},
 		{
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-std=gnu++17"
 				},
 				{
 					"backtrace" : 7,
@@ -659,21 +654,21 @@
 			},
 			"sourceIndexes" : 
 			[
-				168,
-				169,
-				170,
-				171,
-				172,
-				178,
-				179,
-				180,
-				181,
-				182,
-				196,
-				197,
-				198,
-				200,
-				201
+				163,
+				164,
+				165,
+				166,
+				167,
+				173,
+				174,
+				175,
+				176,
+				177,
+				191,
+				192,
+				193,
+				195,
+				196
 			]
 		}
 	],
@@ -682,10 +677,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -766,10 +757,11 @@
 				7,
 				8,
 				9,
-				10,
+				25,
+				26,
 				27,
-				28,
 				29,
+				30,
 				31,
 				32,
 				33,
@@ -789,8 +781,8 @@
 				47,
 				48,
 				49,
-				50,
 				51,
+				52,
 				53,
 				54,
 				55,
@@ -824,17 +816,18 @@
 				83,
 				84,
 				85,
-				86,
-				87,
-				88,
-				89,
+				108,
+				110,
+				112,
 				113,
+				114,
 				115,
-				117,
-				118,
-				119,
-				120,
+				121,
+				124,
+				125,
 				126,
+				127,
+				128,
 				129,
 				130,
 				131,
@@ -848,42 +841,38 @@
 				139,
 				140,
 				141,
-				142,
-				143,
 				144,
-				145,
-				146,
-				149,
-				156,
+				151,
+				153,
+				155,
+				157,
 				158,
+				159,
 				160,
+				161,
 				162,
-				163,
-				164,
-				165,
-				166,
-				167,
-				173,
-				174,
-				175,
-				176,
-				177,
-				183,
+				168,
+				169,
+				170,
+				171,
+				172,
+				178,
+				179,
+				180,
 				184,
 				185,
+				186,
+				187,
+				188,
 				189,
-				190,
-				191,
-				192,
-				193,
-				194,
-				195
+				190
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
+				10,
 				11,
 				12,
 				13,
@@ -897,8 +886,10 @@
 				21,
 				22,
 				23,
-				24,
-				25,
+				87,
+				88,
+				89,
+				90,
 				91,
 				92,
 				93,
@@ -916,61 +907,56 @@
 				105,
 				106,
 				107,
-				108,
-				109,
-				110,
 				111,
-				112,
 				116,
-				121,
+				117,
+				118,
+				120,
 				122,
 				123,
-				125,
-				127,
-				128,
+				142,
+				143,
+				145,
+				146,
 				147,
 				148,
+				149,
 				150,
-				151,
 				152,
-				153,
 				154,
-				155,
-				157,
-				159,
-				161,
-				168,
-				169,
-				170,
-				171,
-				172,
-				178,
-				179,
-				180,
+				156,
+				163,
+				164,
+				165,
+				166,
+				167,
+				173,
+				174,
+				175,
+				176,
+				177,
 				181,
 				182,
-				186,
-				187,
-				188,
-				196,
-				197,
-				198,
-				199,
-				200,
-				201
+				183,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				26,
-				30,
-				52,
-				90,
-				114,
-				124,
-				202
+				24,
+				28,
+				50,
+				86,
+				109,
+				119,
+				197
 			]
 		}
 	],
@@ -984,11 +970,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "Core/Inc/can.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Inc/crc.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1035,12 +1016,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/can.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/crc.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1279,11 +1254,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1389,11 +1359,6 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_crc.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1463,12 +1428,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj"
   "CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj.d"
-  "CMakeFiles/EC_C_Board.elf.dir/Core/Src/crc.c.obj"
-  "CMakeFiles/EC_C_Board.elf.dir/Core/Src/crc.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/Core/Src/dma.c.obj"
   "CMakeFiles/EC_C_Board.elf.dir/Core/Src/dma.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj"
@@ -36,8 +34,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj.d"
-  "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
-  "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"

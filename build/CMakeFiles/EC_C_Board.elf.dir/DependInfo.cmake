@@ -46,7 +46,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/le_lianxiang/Desktop/Missile/Core/Src/can.c" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj.d"
-  "C:/Users/le_lianxiang/Desktop/Missile/Core/Src/crc.c" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/crc.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/crc.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Core/Src/dma.c" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/dma.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Core/Src/freertos.c" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Core/Src/gpio.c" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Core/Src/gpio.c.obj.d"
@@ -63,7 +62,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj.d"
-  "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj.d"

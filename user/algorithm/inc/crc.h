@@ -34,6 +34,8 @@ void Append_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength);
 uint32_t Verify_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength);
 uint16_t Get_CRC16_Check_Sum(uint8_t *pchMessage, uint32_t dwLength, uint16_t wCRC);
 
+uint16_t calc_crc16(uint8_t *snd, uint8_t num);
+
 // CRC32
 // CRC32
 void Append_CRC32_Check_Sum(uint32_t *pchMessage, uint32_t dwLength);

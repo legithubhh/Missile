@@ -70,14 +70,14 @@ void ModeTask()
 
 void RemoteShootTarget0Ctrl()  // 目标为前哨站
 {
-    shoot.SetFricLevel1Speed(80.f * 60.f);  //(n*60)即n转每秒
-    shoot.SetFricLevel2Speed(100.f * 60.f);
+    shoot.SetFricLevel2Speed(20.f * 60.f);  //(n*60)即n转每秒
+    shoot.SetFricLevel1Speed(10.f * 60.f);
 }
 
 void RemoteShootTarget1Ctrl()  // 目标为基地
 {
-    shoot.SetFricLevel1Speed(80.f * 60.f);
-    shoot.SetFricLevel2Speed(100.f * 60.f);
+    shoot.SetFricLevel2Speed(30.f * 60.f);
+    shoot.SetFricLevel1Speed(20.f * 60.f);
 }
 
 void StopFricCtrl()

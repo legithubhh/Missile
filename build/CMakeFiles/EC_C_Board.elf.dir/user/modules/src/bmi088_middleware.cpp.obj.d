@@ -31,7 +31,6 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_dma_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_cortex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_can.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \

@@ -36,8 +36,10 @@ class Temperature_t
    public:
     UartInstance *premote_instance;
     void Update(uint8_t *_pdata);
+    void GetDate();
 
-    int GetTemp1()
+    int
+    GetTemp1()
     {
         return Pack_.temp1;
     }
@@ -48,8 +50,12 @@ class Temperature_t
     // }
 
    private:
+    uint8_t tx_buffer_[8] = {
+        0x01,0x03,0x00,0x00,0x00,0x01,0x84,0x0A};
     TempTransducerDatePack_t Pack_;
 };
+// 0x0A,0x84,0x01,0x00,0x00,0x00,0x03,0x01
+// 0x01,0x03,0x00,0x00,0x00,0x01,0x84,0x0A
 
 /* Exported variables --------------------------------------------------------*/
 extern Temperature_t temperature;

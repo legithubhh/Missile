@@ -24,6 +24,7 @@
 static uint8_t idx;
 static UartInstance *uart_instance[5] = {NULL};
 /* External variables --------------------------------------------------------*/
+uint8_t ad = 0;
 /* Private function prototypes -----------------------------------------------*/
 
 /**
@@ -111,6 +112,9 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
             HAL_UARTEx_ReceiveToIdle_DMA(uart_instance[i]->huart, uart_instance[i]->rx_buffer, uart_instance[i]->rx_buffer_size);
             __HAL_DMA_DISABLE_IT(uart_instance[i]->huart->hdmarx, DMA_IT_HT);  // 重新开启数据接受中断，指定接收地址为uart_instance[i]->rx_buffer
             return;
+        }
+        if (huart == uart_instance[1]->huart) {
+            ad = 1;
         }
     }
 }

@@ -62,16 +62,16 @@ void Shoot::FricCalc()
     }
 }
 
-void Shoot::SetFricLevel1Speed(float _speed)
-{
-    fric_speed_[1].SetRef(-_speed);
-    fric_speed_[3].SetRef(_speed);
-}
-
 void Shoot::SetFricLevel2Speed(float _speed)
 {
-    fric_speed_[0].SetRef(-_speed);
-    fric_speed_[2].SetRef(_speed);
+    fric_speed_[0].SetRef(_speed);
+    fric_speed_[2].SetRef(-_speed);
+}
+
+void Shoot::SetFricLevel1Speed(float _speed)
+{
+    fric_speed_[1].SetRef(_speed);
+    fric_speed_[3].SetRef(-_speed);
 }
 
 static void Left1FricMotorCallback()

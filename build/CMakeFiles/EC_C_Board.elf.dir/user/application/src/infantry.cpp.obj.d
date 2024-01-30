@@ -32,7 +32,6 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_dma_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_cortex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_can.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -114,4 +113,5 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.obj: \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\modified_bessel_func.tcc \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\poly_hermite.tcc \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\poly_laguerre.tcc \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\riemann_zeta.tcc
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\riemann_zeta.tcc \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/temp_measure.h

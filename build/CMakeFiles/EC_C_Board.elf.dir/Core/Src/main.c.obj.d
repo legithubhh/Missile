@@ -30,7 +30,6 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_dma_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_cortex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_can.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
@@ -71,7 +70,6 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/can.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/dma.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/spi.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/tim.h \

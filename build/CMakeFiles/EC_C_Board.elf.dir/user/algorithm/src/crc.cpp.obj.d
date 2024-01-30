@@ -1,7 +1,6 @@
 CMakeFiles/EC_C_Board.elf.dir/user/algorithm/src/crc.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\src\crc.cpp \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/crc.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/stm32f4xx_hal_conf.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_rcc.h \
@@ -31,7 +30,6 @@ CMakeFiles/EC_C_Board.elf.dir/user/algorithm/src/crc.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_dma_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_cortex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_can.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_crc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \

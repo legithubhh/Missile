@@ -58,6 +58,8 @@ void GimbalInit()
  */
 void GimbalTask()
 {
+    temperature.GetDate();
+
     DartStateControl();
 
     shoot.Control();
@@ -112,12 +114,10 @@ void RotationControl()
         if (remote.GetCh1() > 656)  //  660> >656
         {
             PitchDirSet(0);  // 发射架P轴的步进电机
-            DWT_Delay(1e-4);
             StartPitchPulse(1, 400);
         } else if (remote.GetCh1() < -656)  // -660< <-656
         {
             PitchDirSet(1);
-            DWT_Delay(1e-4);
             StartPitchPulse(1, 400);
         }
         if (remote.GetCh0() > 656) {
@@ -134,11 +134,9 @@ void RotationControl()
     if ((remote.GetCh3() != 0x00) || (remote.GetCh2() != 0x00)) {
         if (remote.GetCh3() > 656) {
             PitchDirSet(0);  // 发射架P轴的步进电机
-            DWT_Delay(1e-4);
             StartPitchPulse(1, 100);
         } else if (remote.GetCh3() < -656) {
             PitchDirSet(1);
-            DWT_Delay(1e-4);
             StartPitchPulse(1, 100);
         }
         if (remote.GetCh2() > 656) {
