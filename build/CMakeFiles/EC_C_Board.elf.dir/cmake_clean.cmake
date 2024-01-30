@@ -146,6 +146,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj"
   "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj.d"
+  "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj"
+  "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj.d"
   "EC_C_Board.elf"
   "EC_C_Board.elf.manifest"
   "EC_C_Board.elf.pdb"

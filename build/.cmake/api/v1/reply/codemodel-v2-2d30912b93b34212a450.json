@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.24"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "EC_C_Board.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-EC_C_Board.elf-24757560898a35ec8221.json",
+					"jsonFile" : "target-EC_C_Board.elf-Debug-c9a743c53feff8a90f8b.json",
 					"name" : "EC_C_Board.elf",
 					"projectIndex" : 0
 				}

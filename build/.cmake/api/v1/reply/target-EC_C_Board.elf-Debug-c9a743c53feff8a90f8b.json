@@ -119,7 +119,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu11"
+					"fragment" : "-g -std=gnu11"
 				},
 				{
 					"backtrace" : 7,
@@ -333,12 +333,15 @@
 				186,
 				187,
 				188,
-				198
+				199
 			]
 		},
 		{
 			"compileCommandFragments" : 
 			[
+				{
+					"fragment" : "-g"
+				},
 				{
 					"backtrace" : 7,
 					"fragment" : "-mfloat-abi=hard"
@@ -500,7 +503,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				},
 				{
 					"backtrace" : 7,
@@ -666,10 +669,11 @@
 				180,
 				181,
 				182,
-				195,
 				196,
 				197,
-				199
+				198,
+				200,
+				201
 			]
 		}
 	],
@@ -678,6 +682,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -868,7 +876,8 @@
 				191,
 				192,
 				193,
-				194
+				194,
+				195
 			]
 		},
 		{
@@ -943,11 +952,12 @@
 				186,
 				187,
 				188,
-				195,
 				196,
 				197,
 				198,
-				199
+				199,
+				200,
+				201
 			]
 		},
 		{
@@ -960,7 +970,7 @@
 				90,
 				114,
 				124,
-				200
+				202
 			]
 		}
 	],
@@ -2012,6 +2022,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "user/modules/inc/temp_measure.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 2,
 			"path" : "user/modules/src/bmi088_driver.cpp",
 			"sourceGroupIndex" : 1
@@ -2038,6 +2053,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 2,
 			"path" : "user/modules/src/remote.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "user/modules/src/temp_measure.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

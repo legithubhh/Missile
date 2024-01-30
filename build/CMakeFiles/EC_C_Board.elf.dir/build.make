@@ -1103,6 +1103,20 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.s"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\remote.cpp -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\remote.cpp.s
 
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/temp_measure.cpp
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\temp_measure.cpp
+
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.i"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\temp_measure.cpp > CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.i
+
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.s"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\temp_measure.cpp -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.s
+
 # Object files for target EC_C_Board.elf
 EC_C_Board_elf_OBJECTS = \
 "CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj" \
@@ -1178,7 +1192,8 @@ EC_C_Board_elf_OBJECTS = \
 "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj" \
-"CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj"
+"CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj" \
+"CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj"
 
 # External object files for target EC_C_Board.elf
 EC_C_Board_elf_EXTERNAL_OBJECTS =
@@ -1257,10 +1272,11 @@ EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj
+EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/build.make
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/objects1.rsp
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable EC_C_Board.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Linking CXX executable EC_C_Board.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EC_C_Board.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/le_lianxiang/Desktop/Missile/build/EC_C_Board.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/le_lianxiang/Desktop/Missile/build/EC_C_Board.bin"

@@ -118,6 +118,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/bmi088_middleware.cpp" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/dji_motor.cpp" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj.d"
   "C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/remote.cpp" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj.d"
+  "C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/temp_measure.cpp" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj" "gcc" "CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

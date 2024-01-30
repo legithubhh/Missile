@@ -4,7 +4,7 @@
  * @brief     :此文档实现控制电机的输出
  * @history   :
  *  Version     Date            Author          Note
- *  V0.9.0      yyyy-mm-dd      <author>        1. <note>
+ *  V0.9.0      2024-01-30      JasonLi        1. <note>
  *******************************************************************************
  * @attention :
  * ch0：控制Yaw轴
@@ -25,6 +25,7 @@
 #include "remote.h"
 #include "remote_keyboard.h"
 #include "shoot.h"
+#include "temp_measure.h"
 /* Private macro -------------------------------------------------------------*/
 /* Private constants ---------------------------------------------------------*/
 /* Private types -------------------------------------------------------------*/
@@ -40,6 +41,7 @@ void RotationControl();
 void InfantrySystemInit()
 {
     RemoteControlInit(&huart3);
+    TemperatureMeasureInit(&huart1);
     shoot.MotorInit();
 }
 

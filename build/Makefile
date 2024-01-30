@@ -1888,6 +1888,30 @@ user/modules/src/remote.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.s
 .PHONY : user/modules/src/remote.cpp.s
 
+user/modules/src/temp_measure.obj: user/modules/src/temp_measure.cpp.obj
+.PHONY : user/modules/src/temp_measure.obj
+
+# target to build an object file
+user/modules/src/temp_measure.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj
+.PHONY : user/modules/src/temp_measure.cpp.obj
+
+user/modules/src/temp_measure.i: user/modules/src/temp_measure.cpp.i
+.PHONY : user/modules/src/temp_measure.i
+
+# target to preprocess a source file
+user/modules/src/temp_measure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.i
+.PHONY : user/modules/src/temp_measure.cpp.i
+
+user/modules/src/temp_measure.s: user/modules/src/temp_measure.cpp.s
+.PHONY : user/modules/src/temp_measure.s
+
+# target to generate assembly for a file
+user/modules/src/temp_measure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.s
+.PHONY : user/modules/src/temp_measure.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -2117,6 +2141,9 @@ help:
 	@echo ... user/modules/src/remote.obj
 	@echo ... user/modules/src/remote.i
 	@echo ... user/modules/src/remote.s
+	@echo ... user/modules/src/temp_measure.obj
+	@echo ... user/modules/src/temp_measure.i
+	@echo ... user/modules/src/temp_measure.s
 .PHONY : help
 
 

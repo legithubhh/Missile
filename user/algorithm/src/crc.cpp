@@ -234,3 +234,30 @@ void Append_CRC32_Check_Sum(uint32_t *pchMessage, uint32_t dwLength)
 {
     pchMessage[dwLength - 1] = Get_CRC32_Check_Sum(pchMessage, dwLength - 1);
 }
+
+/**
+ * @brief      温度变送器CRC校验
+ * @param       *snd:待校验的字节数组名
+ * @param       num:待校验的字节总数（包括CRC校验的2个字节）
+ *   @arg       None
+ * @retval      成功返回0，失败返回非0值
+ * @note        None
+ */
+uint16_t calc_crc16(uint8_t *snd, uint8_t num)
+{
+    uint8_t i, j;
+    uint16_t c, crc = 0XFFFF;
+    for (i = 0; i < num; i++) {
+        c = snd[i] & 0X00ff;
+        crc ^= c;
+        for (j = 0; j < 8; j++) {
+            if (crc & 0X0001) {
+                crc >> 1;
+                crc ^= 0XA001;
+            } else {
+                crc >> 1;
+            }
+        }
+    }
+    return (crc);
+}
