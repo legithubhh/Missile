@@ -24,16 +24,8 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj: \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_types.h \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\machine\_types.h \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\lock.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS/cmsis_os.h \
  C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
  C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/list.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/semphr.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
- C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/stm32f4xx_hal_conf.h \
@@ -68,6 +60,14 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS/cmsis_os.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/semphr.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/infantry.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/ins.h \
