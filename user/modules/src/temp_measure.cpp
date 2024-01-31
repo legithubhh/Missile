@@ -30,30 +30,30 @@ uint8_t ac = 0;
 void Temperature_t::Update(uint8_t *_pdata)
 {
     ac = 1;
-    if (calc_crc16(_pdata, 0x07) == 0) {
-        Pack_.site = (_pdata[0] & 0xFF);
-        Pack_.functionid = (_pdata[1] & 0xFF);
-        Pack_.size = (_pdata[2] & 0xFF);
-        switch (_pdata[3] >> 7) {
-            case 0:
-                Pack_.temp1 = ((_pdata[3] << 8 | _pdata[4]) & 0xFFFF);
-                break;
-            case 1:
-                Pack_.temp1 = (((_pdata[3] << 8 | _pdata[4]) - 0xffff - 0x0001) & 0xFFFF);
-                break;
-        }
-        // Pack_.temp2 =
-        Pack_.crc = ((_pdata[5] << 8 | _pdata[6]) & 0xFFFF);
-        Pack_.temp1 /= 10.f;
-        // Pack_.temp2 /= 10.f;
+    // if (calc_crc16(_pdata, 0x07) == 0) {
+    Pack_.site = (_pdata[0] & 0xFF);
+    Pack_.functionid = (_pdata[1] & 0xFF);
+    Pack_.size = (_pdata[2] & 0xFF);
+    switch (_pdata[3] >> 7) {
+        case 0:
+            Pack_.temp1 = ((_pdata[3] << 8 | _pdata[4]) & 0xFFFF);
+            break;
+        case 1:
+            Pack_.temp1 = (((_pdata[3] << 8 | _pdata[4]) - 0xffff - 0x0001) & 0xFFFF);
+            break;
     }
+    // Pack_.temp2 =
+    Pack_.crc = ((_pdata[5] << 8 | _pdata[6]) & 0xFFFF);
+    // Pack_.temp1 /= 10.f;
+    // Pack_.temp2 /= 10.f;
+    // }
 }
 
 void Temperature_t::GetDate()
 {
     ab = 1;
-    UartSendData(&huart1, tx_buffer_, 0x08, UART_TRAMSMIT_DMA);
-    DWT_Delay(5e-3);
+    UartSendData(&huart1, tx_buffer_, 0x08, UART_TRAMSMIT_BLOCKING);
+    DWT_Delay(0.1f);
 }
 
 static void TemperatureMeasureCallBack()

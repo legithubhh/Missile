@@ -673,12 +673,35 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/usart.c.obj: C:/Users/le_lianxiang/Deskto
   C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
   C:/Users/le_lianxiang/Desktop/Missile/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/endian.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/machine/types.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/newlib.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/stdio.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/config.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/sched.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/select.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/arm-none-eabi/include/sys/types.h \
+  I:/CubeMXandVScode/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   I:/CubeMXandVScode/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 

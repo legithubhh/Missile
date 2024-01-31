@@ -26,8 +26,8 @@ struct TempTransducerDatePack_t {
     int8_t site;
     int8_t functionid;
     int8_t size;
-    int16_t temp1;
-    // int16_t temp2;
+    int32_t temp1;
+    // int32_t temp2;
     int16_t crc;
 };
 
@@ -51,7 +51,7 @@ class Temperature_t
 
    private:
     uint8_t tx_buffer_[8] = {
-        0x01,0x03,0x00,0x00,0x00,0x01,0x84,0x0A};
+        0x01, 0x03, 0x00, 0x00, 0x00, 0x01, 0x84, 0x0A};
     TempTransducerDatePack_t Pack_;
 };
 // 0x0A,0x84,0x01,0x00,0x00,0x00,0x03,0x01
