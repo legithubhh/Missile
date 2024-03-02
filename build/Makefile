@@ -1648,6 +1648,30 @@ user/application/src/shoot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.s
 .PHONY : user/application/src/shoot.cpp.s
 
+user/application/src/temp_control.obj: user/application/src/temp_control.cpp.obj
+.PHONY : user/application/src/temp_control.obj
+
+# target to build an object file
+user/application/src/temp_control.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj
+.PHONY : user/application/src/temp_control.cpp.obj
+
+user/application/src/temp_control.i: user/application/src/temp_control.cpp.i
+.PHONY : user/application/src/temp_control.i
+
+# target to preprocess a source file
+user/application/src/temp_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.i
+.PHONY : user/application/src/temp_control.cpp.i
+
+user/application/src/temp_control.s: user/application/src/temp_control.cpp.s
+.PHONY : user/application/src/temp_control.s
+
+# target to generate assembly for a file
+user/application/src/temp_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.s
+.PHONY : user/application/src/temp_control.cpp.s
+
 user/bsp/src/bsp_can.obj: user/bsp/src/bsp_can.c.obj
 .PHONY : user/bsp/src/bsp_can.obj
 
@@ -2063,6 +2087,9 @@ help:
 	@echo ... user/application/src/shoot.obj
 	@echo ... user/application/src/shoot.i
 	@echo ... user/application/src/shoot.s
+	@echo ... user/application/src/temp_control.obj
+	@echo ... user/application/src/temp_control.i
+	@echo ... user/application/src/temp_control.s
 	@echo ... user/bsp/src/bsp_can.obj
 	@echo ... user/bsp/src/bsp_can.i
 	@echo ... user/bsp/src/bsp_can.s

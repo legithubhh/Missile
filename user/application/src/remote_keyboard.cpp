@@ -91,12 +91,12 @@ void StopFricCtrl()
  *   @arg       None
  * @retval      None
  * @note
- * 当前飞镖发射口的状态：
+ * 当前飞镖发射口的状态：Dart_State.dart_launch_opening_status
  *2：关闭；
  *3：正在开启或者关闭中；
  *1：已经开启。
  * @note
- *飞镖的打击目标，默认为前哨站：
+ *飞镖的打击目标，默认为前哨站：Dart_State.dart_attack_target
  *0：前哨站；
  *1：基地。
  */

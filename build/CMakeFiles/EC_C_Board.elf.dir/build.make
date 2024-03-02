@@ -963,10 +963,24 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.s"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\le_lianxiang\Desktop\Missile\user\application\src\shoot.cpp -o CMakeFiles\EC_C_Board.elf.dir\user\application\src\shoot.cpp.s
 
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/application/src/temp_control.cpp
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\application\src\temp_control.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\application\src\temp_control.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\application\src\temp_control.cpp
+
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.i"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\le_lianxiang\Desktop\Missile\user\application\src\temp_control.cpp > CMakeFiles\EC_C_Board.elf.dir\user\application\src\temp_control.cpp.i
+
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.s"
+	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\le_lianxiang\Desktop\Missile\user\application\src\temp_control.cpp -o CMakeFiles\EC_C_Board.elf.dir\user\application\src\temp_control.cpp.s
+
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj: C:/Users/le_lianxiang/Desktop/Missile/user/bsp/src/bsp_can.c
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_can.c.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_can.c.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\bsp\src\bsp_can.c
 
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.i: cmake_force
@@ -980,7 +994,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj: C:/Users/le_lianxiang/Desktop/Missile/user/bsp/src/bsp_dwt.c
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_dwt.c.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_dwt.c.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\bsp\src\bsp_dwt.c
 
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.i: cmake_force
@@ -994,7 +1008,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj: C:/Users/le_lianxiang/Desktop/Missile/user/bsp/src/bsp_uart.c
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_uart.c.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\bsp\src\bsp_uart.c.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\bsp\src\bsp_uart.c
 
 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.i: cmake_force
@@ -1008,7 +1022,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/bmi088_driver.cpp
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\bmi088_driver.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\bmi088_driver.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\bmi088_driver.cpp
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.i: cmake_force
@@ -1022,7 +1036,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/bmi088_middleware.cpp
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\bmi088_middleware.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\bmi088_middleware.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\bmi088_middleware.cpp
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.i: cmake_force
@@ -1036,7 +1050,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.s: cmake_fo
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/dji_motor.cpp
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\dji_motor.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\dji_motor.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\dji_motor.cpp
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.i: cmake_force
@@ -1050,7 +1064,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/referee.c
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\referee.c.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\referee.c.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\referee.c
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.i: cmake_force
@@ -1064,7 +1078,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/remote.cpp
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\remote.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\remote.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\remote.cpp
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.i: cmake_force
@@ -1078,7 +1092,7 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.s: cmake_force
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/flags.make
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: C:/Users/le_lianxiang/Desktop/Missile/user/modules/src/temp_measure.cpp
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj: CMakeFiles/EC_C_Board.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj"
 	I:\CubeMXandVScode\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj -MF CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.obj.d -o CMakeFiles\EC_C_Board.elf.dir\user\modules\src\temp_measure.cpp.obj -c C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\temp_measure.cpp
 
 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.i: cmake_force
@@ -1155,6 +1169,7 @@ EC_C_Board_elf_OBJECTS = \
 "CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj" \
+"CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj" \
 "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj" \
@@ -1232,6 +1247,7 @@ EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj
+EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj
@@ -1244,7 +1260,7 @@ EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/build.make
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/objects1.rsp
 EC_C_Board.elf: CMakeFiles/EC_C_Board.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable EC_C_Board.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\le_lianxiang\Desktop\Missile\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable EC_C_Board.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EC_C_Board.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/le_lianxiang/Desktop/Missile/build/EC_C_Board.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/le_lianxiang/Desktop/Missile/build/EC_C_Board.bin"

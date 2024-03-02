@@ -1,7 +1,7 @@
 /**
  *******************************************************************************
  * @file      : bsp_uart.c
- * @brief     :
+ * @brief     : 提供接口函数，实现串口发送，接收中断回调。
  * @history   :
  *  Version     Date            Author          Note
  *  V0.9.0      yyyy-mm-dd      <author>        1. <note>
@@ -22,9 +22,8 @@
 /* Private types -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 static uint8_t idx;
-static UartInstance *uart_instance[5] = {NULL};
+static UartInstance *uart_instance[5] = {NULL};  // 最多使用5个串口。
 /* External variables --------------------------------------------------------*/
-uint8_t ad = 0;
 /* Private function prototypes -----------------------------------------------*/
 
 /**
@@ -112,9 +111,6 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
             HAL_UARTEx_ReceiveToIdle_DMA(uart_instance[i]->huart, uart_instance[i]->rx_buffer, uart_instance[i]->rx_buffer_size);
             __HAL_DMA_DISABLE_IT(uart_instance[i]->huart->hdmarx, DMA_IT_HT);  // 重新开启数据接受中断，指定接收地址为uart_instance[i]->rx_buffer
             return;
-        }
-        if (huart == uart_instance[1]->huart) {
-            ad = 1;
         }
     }
 }

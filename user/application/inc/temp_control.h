@@ -1,10 +1,10 @@
 /**
  *******************************************************************************
- * @file      : temp_measure.h
+ * @file      : temp_control.h
  * @brief     :
  * @history   :
  *  Version     Date            Author          Note
- *  V0.9.0      2024-01-30      JasonLi        1. <note>
+ *  V0.9.0      yyyy-mm-dd      <author>        1. <note>
  *******************************************************************************
  * @attention :
  *******************************************************************************
@@ -13,55 +13,16 @@
  *******************************************************************************
  */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __TEMP_MEASURE_H_
-#define __TEMP_MEASURE_H_
+#ifndef __TEMP_CONTROL_H_
+#define __TEMP_CONTROL_H_
 
 #ifdef __cplusplus
 /* Includes ------------------------------------------------------------------*/
-#include "bsp_uart.h"
 /* Exported macro ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported types ------------------------------------------------------------*/
-struct TempTransducerDatePack_t {
-    int8_t site;
-    int8_t functionid;
-    int8_t size;
-    int32_t datatemp1;
-    int32_t datatemp2;
-    float realtemp1;
-    float realtemp2;
-    int16_t crc;
-};
-
-class Temperature_t
-{
-   public:
-    UartInstance *premote_instance;
-    void Update(uint8_t *_pdata);
-    void ReceiveDate();
-
-    float GetTemp1()
-    {
-        return Pack_.realtemp1;
-    }
-
-    float GetTemp2()
-    {
-        return Pack_.realtemp2;
-    }
-
-   private:
-    uint8_t tx_buffer_[8] = {
-        0x01, 0x03, 0x00, 0x00, 0x00, 0x02, 0xC4, 0x0B};
-    TempTransducerDatePack_t Pack_;
-};
-// 0x0A,0x84,0x01,0x00,0x00,0x00,0x03,0x01
-// 0x01,0x03,0x00,0x00,0x00,0x01,0x84,0x0A
-
 /* Exported variables --------------------------------------------------------*/
-extern Temperature_t temperature;
 /* Exported function prototypes ----------------------------------------------*/
-void TemperatureMeasureInit(UART_HandleTypeDef *_phuart);
 #endif
 
 #ifdef __cplusplus
@@ -74,9 +35,9 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* Exported variables --------------------------------------------------------*/
 /* Exported function prototypes ----------------------------------------------*/
-
+void TempTask(void);
 #ifdef __cplusplus
 }
 #endif
 
-#endif /*__TEMP_MEASURE_H_ */
+#endif /* __TEMP_CONTROL_H_ */

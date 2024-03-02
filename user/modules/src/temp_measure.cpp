@@ -17,41 +17,50 @@
 
 #include "bsp_dwt.h"
 #include "crc.h"
+#include "math.h"
 /* Private macro -------------------------------------------------------------*/
 /* Private constants ---------------------------------------------------------*/
 /* Private types -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* External variables --------------------------------------------------------*/
 Temperature_t temperature;
-uint8_t ab = 0;
-uint8_t ac = 0;
 /* Private function prototypes -----------------------------------------------*/
 
 void Temperature_t::Update(uint8_t *_pdata)
 {
-    ac = 1;
-    // if (calc_crc16(_pdata, 0x07) == 0) {
-    Pack_.site = (_pdata[0] & 0xFF);
-    Pack_.functionid = (_pdata[1] & 0xFF);
-    Pack_.size = (_pdata[2] & 0xFF);
-    switch (_pdata[3] >> 7) {
-        case 0:
-            Pack_.temp1 = ((_pdata[3] << 8 | _pdata[4]) & 0xFFFF);
-            break;
-        case 1:
-            Pack_.temp1 = (((_pdata[3] << 8 | _pdata[4]) - 0xffff - 0x0001) & 0xFFFF);
-            break;
+    if (calc_crc16(_pdata, 0x08) != 0) {
+        Pack_.site = (_pdata[0] & 0xFF);
+        Pack_.functionid = (_pdata[1] & 0xFF);
+        Pack_.size = (_pdata[2] & 0xFF);
+        switch (_pdata[3] >> 7) {
+            case 0:
+                Pack_.datatemp1 = ((_pdata[3] << 8 | _pdata[4]) & 0xFFFF);
+                break;
+            case 1:
+                Pack_.datatemp1 = (((_pdata[3] << 8 | _pdata[4]) - 0xffff - 0x0001) & 0xFFFF);
+                break;
+        }
+        switch (_pdata[5] >> 7) {
+            case 0:
+                Pack_.datatemp2 = ((_pdata[5] << 8 | _pdata[6]) & 0xFFFF);
+                break;
+            case 1:
+                Pack_.datatemp2 = (((_pdata[5] << 8 | _pdata[6]) - 0xffff - 0x0001) & 0xFFFF);
+                break;
+        }
+        Pack_.crc = ((_pdata[5] << 8 | _pdata[6]) & 0xFFFF);
+        /*由于接受数据间隔时间，收到的温度数据为0，所以需要过滤这一信号*/
+        if (abs(Pack_.datatemp1 - 0) > 1e-6) {
+            Pack_.realtemp1 = Pack_.datatemp1 / 10.0f;
+        }
+        if (abs(Pack_.datatemp2 - 0) > 1e-6) {
+            Pack_.realtemp2 = Pack_.datatemp2 / 10.0f;
+        }
     }
-    // Pack_.temp2 =
-    Pack_.crc = ((_pdata[5] << 8 | _pdata[6]) & 0xFFFF);
-    // Pack_.temp1 /= 10.f;
-    // Pack_.temp2 /= 10.f;
-    // }
 }
 
-void Temperature_t::GetDate()
+void Temperature_t::ReceiveDate()
 {
-    ab = 1;
     UartSendData(&huart1, tx_buffer_, 0x08, UART_TRAMSMIT_BLOCKING);
     DWT_Delay(0.1f);
 }

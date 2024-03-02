@@ -328,10 +328,10 @@
 				152,
 				154,
 				156,
-				181,
-				182,
 				183,
-				194
+				184,
+				185,
+				196
 			]
 		},
 		{
@@ -659,16 +659,17 @@
 				165,
 				166,
 				167,
-				173,
 				174,
 				175,
 				176,
 				177,
-				191,
-				192,
+				178,
+				179,
 				193,
+				194,
 				195,
-				196
+				197,
+				198
 			]
 		}
 	],
@@ -856,16 +857,17 @@
 				170,
 				171,
 				172,
-				178,
-				179,
+				173,
 				180,
-				184,
-				185,
+				181,
+				182,
 				186,
 				187,
 				188,
 				189,
-				190
+				190,
+				191,
+				192
 			]
 		},
 		{
@@ -930,20 +932,21 @@
 				165,
 				166,
 				167,
-				173,
 				174,
 				175,
 				176,
 				177,
-				181,
-				182,
+				178,
+				179,
 				183,
-				191,
-				192,
+				184,
+				185,
 				193,
 				194,
 				195,
-				196
+				196,
+				197,
+				198
 			]
 		},
 		{
@@ -956,7 +959,7 @@
 				86,
 				109,
 				119,
-				197
+				199
 			]
 		}
 	],
@@ -1888,6 +1891,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "user/application/inc/temp_control.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 2,
 			"path" : "user/application/src/gimbal.cpp",
 			"sourceGroupIndex" : 1
@@ -1914,6 +1922,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 2,
 			"path" : "user/application/src/shoot.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "user/application/src/temp_control.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

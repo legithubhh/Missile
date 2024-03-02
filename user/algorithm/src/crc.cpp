@@ -248,7 +248,7 @@ uint16_t calc_crc16(uint8_t *snd, uint8_t num)
     uint8_t i, j;
     uint16_t c, crc = 0XFFFF;
     for (i = 0; i < num; i++) {
-        c = snd[i] & 0X00ff;
+        c = snd[i] & 0X00FF;
         crc ^= c;
         for (j = 0; j < 8; j++) {
             if (crc & 0X0001) {

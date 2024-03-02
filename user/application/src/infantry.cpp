@@ -36,7 +36,7 @@ void DartStateControl();
 void ServoControl();
 void RotationControl();
 /**
- * @brief Initializes the system.
+ * @brief 串口，CAN对应分配，使用中断回调函数无需占用线程
  */
 void InfantrySystemInit()
 {
@@ -46,7 +46,7 @@ void InfantrySystemInit()
 }
 
 /**
- * @brief Initializes the gimbal.
+ * @brief 电机PID初始化参数
  */
 void GimbalInit()
 {
@@ -58,7 +58,7 @@ void GimbalInit()
  */
 void GimbalTask()
 {
-    temperature.GetDate();
+    temperature.ReceiveDate();
 
     DartStateControl();
 

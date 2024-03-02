@@ -25,6 +25,13 @@ static void Left1FricMotorCallback();
 static void Left2FricMotorCallback();
 static void Right1FricMotorCallback();
 static void Right2FricMotorCallback();
+
+/**
+ * @brief       设置摩擦轮电机级各级PID的基本参数
+ *   @arg       None
+ * @retval      None
+ * @note        None
+ */
 void Shoot::PidInit()
 {
     fric_speed_[0].Init(40.0f, 0.0f, 0.0f, 15000.0f, 0.0f);
@@ -37,6 +44,12 @@ void Shoot::PidInit()
     fric_speed_[3].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 }
 
+/**
+ * @brief       分配电机的ID，以及CAN通道
+ *   @arg       None
+ * @retval      None
+ * @note        None
+ */
 void Shoot::MotorInit()
 {
     fric_motor_[0].Init(0x201, &hcan1, ABSOLUTE_FLAG);
@@ -49,6 +62,12 @@ void Shoot::MotorInit()
     fric_motor_[3].pdji_motor_instance->pCanCallBack = Right2FricMotorCallback;
 }
 
+/**
+ * @brief       计算输出（目标值设定位于remote_keyboard.cpp文件，集中在ModeTask()函数）
+ *   @arg       None
+ * @retval      None
+ * @note        None
+ */
 void Shoot::Control()
 {
     FricCalc();

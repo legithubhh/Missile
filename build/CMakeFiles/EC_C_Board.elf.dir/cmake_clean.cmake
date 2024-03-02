@@ -126,6 +126,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj"
   "CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj.d"
+  "CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj"
+  "CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj"
   "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj.d"
   "CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj"
