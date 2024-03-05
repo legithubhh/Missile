@@ -132,7 +132,7 @@ void MX_FREERTOS_Init(void)
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
-    osThreadDef(tempTask, StartTempTask, osPriorityAboveNormal, 0, 128);
+    osThreadDef(tempTask, StartTempTask, osPriorityNormal, 0, 32);
     modeTaskHandle = osThreadCreate(osThread(tempTask), NULL);
     /* USER CODE END RTOS_THREADS */
 }

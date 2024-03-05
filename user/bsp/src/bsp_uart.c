@@ -106,7 +106,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
         if (huart == uart_instance[i]->huart) {
             if (uart_instance[i]->callback_function != NULL) {
                 uart_instance[i]->callback_function();         // 调用更新函数将数据实现更新
-                memset(uart_instance[i]->rx_buffer, 0, Size);  // 接收结束后清空buffer,对于变长数据是必要的
+                memset(uart_instance[i]->rx_buffer, 0, Size);  // 更新结束后清空buffer
             }
             HAL_UARTEx_ReceiveToIdle_DMA(uart_instance[i]->huart, uart_instance[i]->rx_buffer, uart_instance[i]->rx_buffer_size);
             __HAL_DMA_DISABLE_IT(uart_instance[i]->huart->hdmarx, DMA_IT_HT);  // 重新开启数据接受中断，指定接收地址为uart_instance[i]->rx_buffer

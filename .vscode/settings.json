@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "freertos.h": "c",
-        "temp_control.h": "c"
+        "temp_control.h": "c",
+        "cmsis_os.h": "c"
     }
 }

@@ -1,24 +1,25 @@
 
 GraphedExpression="((temperature).Pack_).realtemp1", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#a00909
-GraphedExpression="((temperature).Pack_).realtemp2", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#09a01b
+GraphedExpression="((temperature).Pack_).realtemp2", Color=#09a01b
 GraphedExpression="((temperature).Pack_).datatemp1", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#09a087
-GraphedExpression="((temperature).Pack_).datatemp2", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#0984a0
+GraphedExpression="((temperature).Pack_).datatemp2", Color=#0984a0
+OpenDocument="startup_stm32f407ighx.s", FilePath="C:/Users/le_lianxiang/Desktop/Missile/Core/Startup/startup_stm32f407ighx.s", Line=44
 OpenDocument="temp_measure.h", FilePath="C:/Users/le_lianxiang/Desktop/Missile/user/modules/inc/temp_measure.h", Line=0
-OpenDocument="main.c", FilePath="C:/Users/le_lianxiang/Desktop/Missile/Core/Src/main.c", Line=41
+OpenDocument="main.c", FilePath="C:/Users/le_lianxiang/Desktop/Missile/Core/Src/main.c", Line=58
 OpenToolbar="Debug", Floating=0, x=0, y=0
-OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=370, h=373, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Global Data", DockArea=LEFT, x=0, y=2, w=370, h=480, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=370, h=401, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=370, h=375, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Global Data", DockArea=LEFT, x=0, y=2, w=370, h=477, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=370, h=402, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
 OpenWindow="Terminal", DockArea=BOTTOM, x=0, y=0, w=880, h=177, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Data Sampling", DockArea=RIGHT, x=0, y=2, w=1398, h=549, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
-OpenWindow="Timeline", DockArea=RIGHT, x=0, y=1, w=1398, h=509, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="1 ns / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1020;-139", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1171;0", CodeGraphLegendShown=1, CodeGraphLegendPosition="1186;0"
+OpenWindow="Data Sampling", DockArea=RIGHT, x=0, y=2, w=1398, h=543, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=RIGHT, x=0, y=1, w=1398, h=505, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="1 ns / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1020;-139", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1171;-69", CodeGraphLegendShown=1, CodeGraphLegendPosition="1187;0"
 OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=1679, h=177, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="RTOS", DockArea=RIGHT, x=0, y=0, w=1398, h=196, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, Showing=""
+OpenWindow="RTOS", DockArea=RIGHT, x=0, y=0, w=1398, h=206, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, Showing=""
 TableHeader="Global Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[189;100;102;100;100;100;502]
 TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Class";"Source"], ColWidths=[720;100;100;100;27;286]
 TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[168;100;100;100;974]
-TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" ((temperature).Pack_).realtemp1";" ((temperature).Pack_).realtemp2";" ((temperature).Pack_).datatemp1";" ((temperature).Pack_).datatemp2"], ColWidths=[100;100;100;100;100;100]
-TableHeader="Data Sampling Setup", SortCol="Value", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[262;100;114;100;114;114;110;134;350]
-TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Data Sampling Table", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" ((temperature).Pack_).realtemp1";" ((temperature).Pack_).realtemp2";" ((temperature).Pack_).datatemp1";" ((temperature).Pack_).datatemp2"], ColWidths=[100;100;100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Value", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[262;100;114;100;114;114;110;126;358]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
 TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
 TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[27;27;27;26]
