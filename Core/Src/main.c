@@ -21,7 +21,6 @@
 #include "cmsis_os.h"
 #include "can.h"
 #include "dma.h"
-#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "usb_device.h"
@@ -29,9 +28,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "bmi088_driver.h"
 #include "bsp_dwt.h"
-#include "infantry.h"
+#include "missile.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,15 +96,13 @@ int main(void)
   MX_DMA_Init();
   MX_CAN1_Init();
   MX_CAN2_Init();
-  MX_SPI1_Init();
   MX_TIM10_Init();
   MX_USART3_UART_Init();
   MX_TIM1_Init();
   MX_USART1_UART_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
     DWT_Init(168);
-    while (BMI088_init(&hspi1, 1) != BMI088_NO_ERROR)
-        ;
     InfantrySystemInit();
     HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
   /* USER CODE END 2 */

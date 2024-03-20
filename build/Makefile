@@ -248,30 +248,6 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
-Core/Src/spi.obj: Core/Src/spi.c.obj
-.PHONY : Core/Src/spi.obj
-
-# target to build an object file
-Core/Src/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Core/Src/spi.c.obj
-.PHONY : Core/Src/spi.c.obj
-
-Core/Src/spi.i: Core/Src/spi.c.i
-.PHONY : Core/Src/spi.i
-
-# target to preprocess a source file
-Core/Src/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Core/Src/spi.c.i
-.PHONY : Core/Src/spi.c.i
-
-Core/Src/spi.s: Core/Src/spi.c.s
-.PHONY : Core/Src/spi.s
-
-# target to generate assembly for a file
-Core/Src/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Core/Src/spi.c.s
-.PHONY : Core/Src/spi.c.s
-
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
@@ -855,30 +831,6 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s: Drivers/STM32F4xx_HAL_D
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
-
-# target to build an object file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
-
-# target to preprocess a source file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
-
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
-
-# target to generate assembly for a file
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
-.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
 
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
@@ -1552,53 +1504,29 @@ user/application/src/gimbal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/gimbal.cpp.s
 .PHONY : user/application/src/gimbal.cpp.s
 
-user/application/src/infantry.obj: user/application/src/infantry.cpp.obj
-.PHONY : user/application/src/infantry.obj
+user/application/src/missile.obj: user/application/src/missile.cpp.obj
+.PHONY : user/application/src/missile.obj
 
 # target to build an object file
-user/application/src/infantry.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.obj
-.PHONY : user/application/src/infantry.cpp.obj
+user/application/src/missile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.obj
+.PHONY : user/application/src/missile.cpp.obj
 
-user/application/src/infantry.i: user/application/src/infantry.cpp.i
-.PHONY : user/application/src/infantry.i
-
-# target to preprocess a source file
-user/application/src/infantry.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.i
-.PHONY : user/application/src/infantry.cpp.i
-
-user/application/src/infantry.s: user/application/src/infantry.cpp.s
-.PHONY : user/application/src/infantry.s
-
-# target to generate assembly for a file
-user/application/src/infantry.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/infantry.cpp.s
-.PHONY : user/application/src/infantry.cpp.s
-
-user/application/src/ins.obj: user/application/src/ins.cpp.obj
-.PHONY : user/application/src/ins.obj
-
-# target to build an object file
-user/application/src/ins.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj
-.PHONY : user/application/src/ins.cpp.obj
-
-user/application/src/ins.i: user/application/src/ins.cpp.i
-.PHONY : user/application/src/ins.i
+user/application/src/missile.i: user/application/src/missile.cpp.i
+.PHONY : user/application/src/missile.i
 
 # target to preprocess a source file
-user/application/src/ins.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.i
-.PHONY : user/application/src/ins.cpp.i
+user/application/src/missile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.i
+.PHONY : user/application/src/missile.cpp.i
 
-user/application/src/ins.s: user/application/src/ins.cpp.s
-.PHONY : user/application/src/ins.s
+user/application/src/missile.s: user/application/src/missile.cpp.s
+.PHONY : user/application/src/missile.s
 
 # target to generate assembly for a file
-user/application/src/ins.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.s
-.PHONY : user/application/src/ins.cpp.s
+user/application/src/missile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.s
+.PHONY : user/application/src/missile.cpp.s
 
 user/application/src/remote_keyboard.obj: user/application/src/remote_keyboard.cpp.obj
 .PHONY : user/application/src/remote_keyboard.obj
@@ -1744,54 +1672,6 @@ user/bsp/src/bsp_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.s
 .PHONY : user/bsp/src/bsp_uart.c.s
 
-user/modules/src/bmi088_driver.obj: user/modules/src/bmi088_driver.cpp.obj
-.PHONY : user/modules/src/bmi088_driver.obj
-
-# target to build an object file
-user/modules/src/bmi088_driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.obj
-.PHONY : user/modules/src/bmi088_driver.cpp.obj
-
-user/modules/src/bmi088_driver.i: user/modules/src/bmi088_driver.cpp.i
-.PHONY : user/modules/src/bmi088_driver.i
-
-# target to preprocess a source file
-user/modules/src/bmi088_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.i
-.PHONY : user/modules/src/bmi088_driver.cpp.i
-
-user/modules/src/bmi088_driver.s: user/modules/src/bmi088_driver.cpp.s
-.PHONY : user/modules/src/bmi088_driver.s
-
-# target to generate assembly for a file
-user/modules/src/bmi088_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_driver.cpp.s
-.PHONY : user/modules/src/bmi088_driver.cpp.s
-
-user/modules/src/bmi088_middleware.obj: user/modules/src/bmi088_middleware.cpp.obj
-.PHONY : user/modules/src/bmi088_middleware.obj
-
-# target to build an object file
-user/modules/src/bmi088_middleware.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj
-.PHONY : user/modules/src/bmi088_middleware.cpp.obj
-
-user/modules/src/bmi088_middleware.i: user/modules/src/bmi088_middleware.cpp.i
-.PHONY : user/modules/src/bmi088_middleware.i
-
-# target to preprocess a source file
-user/modules/src/bmi088_middleware.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.i
-.PHONY : user/modules/src/bmi088_middleware.cpp.i
-
-user/modules/src/bmi088_middleware.s: user/modules/src/bmi088_middleware.cpp.s
-.PHONY : user/modules/src/bmi088_middleware.s
-
-# target to generate assembly for a file
-user/modules/src/bmi088_middleware.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.s
-.PHONY : user/modules/src/bmi088_middleware.cpp.s
-
 user/modules/src/dji_motor.obj: user/modules/src/dji_motor.cpp.obj
 .PHONY : user/modules/src/dji_motor.obj
 
@@ -1816,29 +1696,29 @@ user/modules/src/dji_motor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.s
 .PHONY : user/modules/src/dji_motor.cpp.s
 
-user/modules/src/referee.obj: user/modules/src/referee.c.obj
+user/modules/src/referee.obj: user/modules/src/referee.cpp.obj
 .PHONY : user/modules/src/referee.obj
 
 # target to build an object file
-user/modules/src/referee.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.obj
-.PHONY : user/modules/src/referee.c.obj
+user/modules/src/referee.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.obj
+.PHONY : user/modules/src/referee.cpp.obj
 
-user/modules/src/referee.i: user/modules/src/referee.c.i
+user/modules/src/referee.i: user/modules/src/referee.cpp.i
 .PHONY : user/modules/src/referee.i
 
 # target to preprocess a source file
-user/modules/src/referee.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.i
-.PHONY : user/modules/src/referee.c.i
+user/modules/src/referee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.i
+.PHONY : user/modules/src/referee.cpp.i
 
-user/modules/src/referee.s: user/modules/src/referee.c.s
+user/modules/src/referee.s: user/modules/src/referee.cpp.s
 .PHONY : user/modules/src/referee.s
 
 # target to generate assembly for a file
-user/modules/src/referee.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.c.s
-.PHONY : user/modules/src/referee.c.s
+user/modules/src/referee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EC_C_Board.elf.dir\build.make CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.s
+.PHONY : user/modules/src/referee.cpp.s
 
 user/modules/src/remote.obj: user/modules/src/remote.cpp.obj
 .PHONY : user/modules/src/remote.obj
@@ -1912,9 +1792,6 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
-	@echo ... Core/Src/spi.obj
-	@echo ... Core/Src/spi.i
-	@echo ... Core/Src/spi.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -1988,9 +1865,6 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
-	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s
@@ -2075,12 +1949,9 @@ help:
 	@echo ... user/application/src/gimbal.obj
 	@echo ... user/application/src/gimbal.i
 	@echo ... user/application/src/gimbal.s
-	@echo ... user/application/src/infantry.obj
-	@echo ... user/application/src/infantry.i
-	@echo ... user/application/src/infantry.s
-	@echo ... user/application/src/ins.obj
-	@echo ... user/application/src/ins.i
-	@echo ... user/application/src/ins.s
+	@echo ... user/application/src/missile.obj
+	@echo ... user/application/src/missile.i
+	@echo ... user/application/src/missile.s
 	@echo ... user/application/src/remote_keyboard.obj
 	@echo ... user/application/src/remote_keyboard.i
 	@echo ... user/application/src/remote_keyboard.s
@@ -2099,12 +1970,6 @@ help:
 	@echo ... user/bsp/src/bsp_uart.obj
 	@echo ... user/bsp/src/bsp_uart.i
 	@echo ... user/bsp/src/bsp_uart.s
-	@echo ... user/modules/src/bmi088_driver.obj
-	@echo ... user/modules/src/bmi088_driver.i
-	@echo ... user/modules/src/bmi088_driver.s
-	@echo ... user/modules/src/bmi088_middleware.obj
-	@echo ... user/modules/src/bmi088_middleware.i
-	@echo ... user/modules/src/bmi088_middleware.s
 	@echo ... user/modules/src/dji_motor.obj
 	@echo ... user/modules/src/dji_motor.i
 	@echo ... user/modules/src/dji_motor.s

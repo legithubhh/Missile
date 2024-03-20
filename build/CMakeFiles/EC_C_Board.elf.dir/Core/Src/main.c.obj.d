@@ -35,7 +35,6 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
@@ -71,7 +70,6 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/can.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/dma.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/spi.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/tim.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
  C:\Users\le_lianxiang\Desktop\Missile\USB_DEVICE\App/usb_device.h \
@@ -101,6 +99,5 @@ CMakeFiles/EC_C_Board.elf.dir/Core/Src/main.c.obj: \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\strings.h \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\string.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/gpio.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/bmi088_driver.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/infantry.h
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/missile.h

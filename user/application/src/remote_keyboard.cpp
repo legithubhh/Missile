@@ -10,9 +10,12 @@
  * s1:1       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆连续前移。
  * s1:3       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆连续后退。
  * s1:2       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆停止。
- * s1:1       s2:2      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆间断以一定距离前移两次。
- * s1:3       s2:2      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆停止。
- * s1:2       s2:2      裁判系统模式：关闭摩擦轮，默认目标为前哨站。推杆停止。
+ * s1:1       s2:3      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆间断以一定距离前移两次。
+ * s1:3       s2:3      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆停止。
+ * s1:2       s2:3      裁判系统模式：关闭摩擦轮，默认目标为前哨站。推杆停止。
+ * s1:1       s2:2      测试模式：关闭摩擦轮，默认目标为前哨站。推杆连续前移。
+ * s1:3       s2:2      测试模式：关闭摩擦轮，默认目标为前哨站。推杆连续后退。
+ * s1:2       s2:2      测试模式：关闭摩擦轮，默认目标为前哨站。推杆停止。
  *******************************************************************************
  *  Copyright (c) 2024 Reborn Team, USTB.
  *  All Rights Reserved.
@@ -56,9 +59,9 @@ void ModeTask()
 
     } else if (remote.GetS2() == 3 && fri_flag == 1)  // 裁判系统，打开摩擦轮
     {
-        if (Dart_State.dart_attack_target == 0) {
+        if (referee.dart_info_info_.dart_info_attack_target == 0) {
             RemoteShootTarget0Ctrl();
-        } else if (Dart_State.dart_attack_target == 1) {
+        } else if (referee.dart_info_info_.dart_info_attack_target == 1) {
             RemoteShootTarget1Ctrl();
         }
 
@@ -74,7 +77,7 @@ void RemoteShootTarget0Ctrl()  // 目标为前哨站
     shoot.SetFricLevel1Speed(10.f * 60.f);
 }
 
-void RemoteShootTarget1Ctrl()  // 目标为基地
+void RemoteShootTarget1Ctrl()  // 目标为基地固定目标
 {
     shoot.SetFricLevel2Speed(30.f * 60.f);
     shoot.SetFricLevel1Speed(20.f * 60.f);
@@ -91,56 +94,60 @@ void StopFricCtrl()
  *   @arg       None
  * @retval      None
  * @note
- * 当前飞镖发射口的状态：Dart_State.dart_launch_opening_status
- *2：关闭；
- *3：正在开启或者关闭中；
- *1：已经开启。
+ * 当前飞镖发射口的状态：referee.dart_client_cmd_.dart_launch_opening_status
+ *1：关闭；
+ *2：正在开启或者关闭中；
+ *0：已经开启。
  * @note
- *飞镖的打击目标，默认为前哨站：Dart_State.dart_attack_target
+ *飞镖的打击目标，默认为前哨站：referee.dart_info_info_.dart_info_attack_target
  *0：前哨站；
- *1：基地。
+ *1：基地固定目标。
+ *2：基地随机目标。
  */
 void DartStateControl()
 {
     if (remote.GetS2() == 3) {
         switch (remote.GetS1()) {
+            /*以下代码只供模拟裁判系统发送发射口状态，正式比赛请注释*/
             case 1: {
-                Dart_State.dart_launch_opening_status = 1;
+                referee.dart_client_cmd_.dart_launch_opening_status = 1;
                 break;
             }
             case 3: {
-                Dart_State.dart_launch_opening_status = 3;
+                referee.dart_client_cmd_.dart_launch_opening_status = 2;
                 break;
             }
             case 2: {
-                Dart_State.dart_launch_opening_status = 2;
+                referee.dart_client_cmd_.dart_launch_opening_status = 0;
                 break;
             }
         }
-        if (Dart_State.dart_attack_target == 0 && Dart_State.last_dart_attack_target == 1)  // 基地切换前哨站
+        /*如果只打基地，建议注销以下代码，无需切换，瞄准基地固定目标打就行*/
+        if (referee.dart_info_info_.dart_info_attack_target == 0 && referee.dart_info_info_.dart_info_last_attack_target == 1)  // 基地固定目标切换前哨站
         {
             YawDirSet(0);  // 发射架Y轴的步进电机
             StartYawPulse(1, 500);
-        } else if (Dart_State.dart_attack_target == 1 && Dart_State.last_dart_attack_target == 0)  // 前哨站切换基地
+            referee.dart_info_info_.dart_info_last_attack_target = referee.dart_info_info_.dart_info_attack_target;
+        } else if (referee.dart_info_info_.dart_info_attack_target == 1 && referee.dart_info_info_.dart_info_last_attack_target == 0)  // 前哨站切换基地固定目标
         {
             YawDirSet(1);  // 发射架Y轴的步进电机
             StartYawPulse(1, 500);
+            referee.dart_info_info_.dart_info_last_attack_target = referee.dart_info_info_.dart_info_attack_target;
         }
-        Dart_State.last_dart_attack_target = Dart_State.dart_attack_target;
     }
 
-    // s2 是状态
+    /*判断发射口状态，对摩擦轮以及推弹电机的控制变量进行使能*/
     if (remote.GetS2() == 3)  // 裁判系统
     {
-        if (Dart_State.dart_launch_opening_status == 2)  // 关闭
+        if (referee.dart_client_cmd_.dart_launch_opening_status == 1)  // 关闭
         {
             fashe_flag = 0;
             fri_flag = 0;
-        } else if (Dart_State.dart_launch_opening_status == 3)  // 正在开启或者关闭中
+        } else if (referee.dart_client_cmd_.dart_launch_opening_status == 2)  // 正在开启或者关闭中
         {
             fashe_flag = 0;
             fri_flag = 1;
-        } else if (Dart_State.dart_launch_opening_status == 1 && fashe_flag == 0)  // 已经开启
+        } else if (referee.dart_client_cmd_.dart_launch_opening_status == 0 && fashe_flag == 0)  // 已经开启
         {
             fashe_flag = 1;
             fri_flag = 1;

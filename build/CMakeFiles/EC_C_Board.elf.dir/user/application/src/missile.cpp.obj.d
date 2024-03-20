@@ -1,7 +1,7 @@
-CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj: \
- C:\Users\le_lianxiang\Desktop\Missile\user\application\src\ins.cpp \
- C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/ins.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/bmi088_driver.h \
+CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.obj: \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\src\missile.cpp \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/missile.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/stm32f4xx_hal_conf.h \
@@ -37,15 +37,24 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/QuaternionEKF.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/Kalman_filter.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/gimbal.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_uart.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/remote.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/remote_keyboard.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/shoot.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/dji_motor.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_can.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/can.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/pid.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f407xx.h \
  C:\Users\le_lianxiang\Desktop\Missile\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\string.h \
@@ -104,10 +113,4 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/ins.cpp.obj: \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\poly_hermite.tcc \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\poly_laguerre.tcc \
  i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\tr1\riemann_zeta.tcc \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\stdlib.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\c++\10.3.1\cstdlib \
- C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/pid.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/tim.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/user_lib.h
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/temp_measure.h

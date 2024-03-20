@@ -45,7 +45,7 @@ void Shoot::PidInit()
 }
 
 /**
- * @brief       分配电机的ID，以及CAN通道
+ * @brief       分配电机的ID，以及CAN通道和更新函数
  *   @arg       None
  * @retval      None
  * @note        None

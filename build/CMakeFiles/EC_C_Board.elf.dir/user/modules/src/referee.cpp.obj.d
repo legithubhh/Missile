@@ -1,6 +1,8 @@
-CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\bmi088_middleware.cpp \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/bmi088_middleware.h \
+CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.obj: \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\src\referee.cpp \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_uart.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/stm32f4xx_hal_conf.h \
@@ -36,10 +38,24 @@ CMakeFiles/EC_C_Board.elf.dir/user/modules/src/bmi088_middleware.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
- C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h
+ C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\algorithm\inc/crc.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\string.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\_ansi.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\newlib.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\config.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\machine\ieeefp.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\reent.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\_ansi.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_types.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\machine\_types.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\lock.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\cdefs.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_locale.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\strings.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\string.h
