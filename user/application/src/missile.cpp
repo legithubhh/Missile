@@ -94,16 +94,16 @@ void ServoControl()  // 丝杆步进电机
         SetPushPWM(400);
         // 加个计时函数
         time_real = DWT_GetTimeline_ms();
-        // 暂停2.5s，留出检测窗口关闭空窗期
+        // 暂停2.5s，留出装甲板判断击打的空窗期
         if (time_real - time_this > 5200 && time_real - time_this < 7700) {
             SetPushPWM(0);
         }
-        if (time_real - time_this > 7700 && time_real - time_this < 15400) {
+        if (time_real - time_this > 7700 && time_real - time_this < 12900) {
             PushDirSet(0);
             DWT_Delay(1e-4);
             SetPushPWM(400);
         }
-        if (time_real - time_this > 15400) {
+        if (time_real - time_this > 12900) {
             SetPushPWM(0);
         }
     } else {

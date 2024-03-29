@@ -110,7 +110,7 @@ void DartStateControl()
         switch (remote.GetS1()) {
             /*以下代码只供模拟裁判系统发送发射口状态，正式比赛请注释*/
             case 1: {
-                referee.dart_client_cmd_.dart_launch_opening_status = 1;
+                referee.dart_client_cmd_.dart_launch_opening_status = 0;
                 break;
             }
             case 3: {
@@ -118,7 +118,7 @@ void DartStateControl()
                 break;
             }
             case 2: {
-                referee.dart_client_cmd_.dart_launch_opening_status = 0;
+                referee.dart_client_cmd_.dart_launch_opening_status = 1;
                 break;
             }
         }

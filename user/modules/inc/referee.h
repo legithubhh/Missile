@@ -423,7 +423,7 @@ class Referee
     ext_game_robot_HP_t game_robot_HP_;                        // 0x0003
     ext_event_data_t event_data_;                              // 0x0101
     ext_supply_projectile_action_t supply_projectile_action_;  // 0x0102
-    ext_dart_info_t dart_info_;                                // !!!0x0105!!!
+    ext_dart_info_t dart_info_;                                // @ 0x0105 @
     ext_dart_info_info_t dart_info_info_;                      // 飞镖发射相关数据dart_info_.dart_info位0-15对应数据
     ext_game_robot_state_t game_robot_state_;                  // 0x0201
     ext_power_heat_data_t power_heat_data_;                    // 0x0202
@@ -432,7 +432,7 @@ class Referee
     aerial_robot_support_data_t aerial_robot_support_data_;    // 0x0205
     ext_robot_hurt_t robot_hurt_;                              // 0x0206
     ext_shoot_data_t shoot_data_;                              // 0x0207
-    ext_dart_client_cmd_t dart_client_cmd_;                    // !!!0x020A!!!
+    ext_dart_client_cmd_t dart_client_cmd_;                    // @ 0x020A @
     ext_SendClientData_t show_data_;                           // 客户端信息
     ext_CommunatianData_t commu_data;                          // 队友通信信息
     ext_robot_command_t comma_data;                            // 图传链路

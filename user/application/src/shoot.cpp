@@ -34,10 +34,10 @@ static void Right2FricMotorCallback();
  */
 void Shoot::PidInit()
 {
-    fric_speed_[0].Init(40.0f, 0.0f, 0.0f, 15000.0f, 0.0f);
-    fric_speed_[1].Init(40.0f, 0.0f, 0.0f, 15000.0f, 0.0f);
-    fric_speed_[2].Init(40.0f, 0.0f, 0.0f, 15000.0f, 0.0f);
-    fric_speed_[3].Init(40.0f, 0.0f, 0.0f, 15000.0f, 0.0f);
+    fric_speed_[0].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
+    fric_speed_[1].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
+    fric_speed_[2].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
+    fric_speed_[3].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
     fric_speed_[0].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
     fric_speed_[1].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
     fric_speed_[2].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
