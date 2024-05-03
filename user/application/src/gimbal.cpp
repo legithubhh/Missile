@@ -35,9 +35,9 @@ void PitchOneStepSET(uint16_t _step)
 {
     int cnt;
     for (cnt = _step; cnt != 0; cnt--) {
-        HAL_GPIO_WritePin(PITCH__Pul_GPIO_Port, PITCH__Pul_Pin, GPIO_PIN_SET);  // PE9
+        HAL_GPIO_WritePin(PITCH_PUL_GPIO_Port, PITCH_PUL_Pin, GPIO_PIN_SET);  // PE9
         DWT_Delay(1e-3);
-        HAL_GPIO_WritePin(PITCH__Pul_GPIO_Port, PITCH__Pul_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(PITCH_PUL_GPIO_Port, PITCH_PUL_Pin, GPIO_PIN_RESET);
         DWT_Delay(1e-3);
     }
 }
@@ -93,15 +93,15 @@ void PushDirSet(uint8_t _dir)
 }
 
 /**
- * @brief      PWM输出控制飞镖脉冲
- * @param       _xpwm:飞镖脉冲占空比_xpwm/500（不影响速度，保证高低电平脉宽>1.2us即可）
+ * @brief      PWM输出控制推杆脉冲
+ * @param       _xpwm:飞镖脉冲占空比_xpwm/50（不影响速度，保证高低电平脉宽>1.2us即可）
  *   @arg       None
  * @retval      None
  * @note        None
  */
 void SetPushPWM(uint16_t _xpwm)
 {
-    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_3, _xpwm);
+    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, _xpwm);
 }
 
 /**

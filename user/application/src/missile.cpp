@@ -79,11 +79,11 @@ void ServoControl()  // 丝杆步进电机
         if (remote.GetS1() == 1) {
             PushDirSet(0);  // 前进
             DWT_Delay(1e-4);
-            SetPushPWM(250);
+            SetPushPWM(25);
         } else if (remote.GetS1() == 3) {
             PushDirSet(1);  // 回退
             DWT_Delay(1e-4);
-            SetPushPWM(250);
+            SetPushPWM(25);
         } else {
             PushDirSet(1);  // 停止
             SetPushPWM(0);
@@ -91,7 +91,7 @@ void ServoControl()  // 丝杆步进电机
     } else if (remote.GetS2() == 3 && fashe_flag == 1) {
         PushDirSet(0);  // 前进
         DWT_Delay(1e-4);
-        SetPushPWM(400);
+        SetPushPWM(40);
         // 加个计时函数
         time_real = DWT_GetTimeline_ms();
         // 暂停2.5s，留出装甲板判断击打的空窗期
@@ -101,7 +101,7 @@ void ServoControl()  // 丝杆步进电机
         if (time_real - time_this > 7700 && time_real - time_this < 12900) {
             PushDirSet(0);
             DWT_Delay(1e-4);
-            SetPushPWM(400);
+            SetPushPWM(40);
         }
         if (time_real - time_this > 12900) {
             SetPushPWM(0);
@@ -117,10 +117,12 @@ void RotationControl()
         if (remote.GetCh1() > 656)  //  660> >656
         {
             PitchDirSet(0);  // 发射架P轴的步进电机
+            DWT_Delay(1e-4);
             StartPitchPulse(1, 400);
         } else if (remote.GetCh1() < -656)  // -660< <-656
         {
             PitchDirSet(1);
+            DWT_Delay(1e-4);
             StartPitchPulse(1, 400);
         }
         if (remote.GetCh0() > 656) {

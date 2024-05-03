@@ -57,12 +57,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define TEMP_CONTROL_Pin GPIO_PIN_7
-#define TEMP_CONTROL_GPIO_Port GPIOI
-#define PUSH_DIR_Pin GPIO_PIN_6
+#define PUSH_DIR_Pin GPIO_PIN_7
 #define PUSH_DIR_GPIO_Port GPIOI
 #define YAW_DIR_Pin GPIO_PIN_6
-#define YAW_DIR_GPIO_Port GPIOC
+#define YAW_DIR_GPIO_Port GPIOI
+#define YAW_PUL_Pin GPIO_PIN_6
+#define YAW_PUL_GPIO_Port GPIOC
 #define LED_R_Pin GPIO_PIN_12
 #define LED_R_GPIO_Port GPIOH
 #define LED_G_Pin GPIO_PIN_11
@@ -71,12 +71,12 @@ void Error_Handler(void);
 #define LED_B_GPIO_Port GPIOH
 #define CS1_ACCEL_Pin GPIO_PIN_4
 #define CS1_ACCEL_GPIO_Port GPIOA
-#define PITCH__Pul_Pin GPIO_PIN_9
-#define PITCH__Pul_GPIO_Port GPIOE
-#define PITCH_DIR_Pin GPIO_PIN_11
+#define PITCH_DIR_Pin GPIO_PIN_13
 #define PITCH_DIR_GPIO_Port GPIOE
-#define YAW_PUL_Pin GPIO_PIN_14
-#define YAW_PUL_GPIO_Port GPIOE
+#define TEMP_CONTROL_Pin GPIO_PIN_9
+#define TEMP_CONTROL_GPIO_Port GPIOE
+#define PITCH_PUL_Pin GPIO_PIN_11
+#define PITCH_PUL_GPIO_Port GPIOE
 #define CS1_GYRO_Pin GPIO_PIN_0
 #define CS1_GYRO_GPIO_Port GPIOB
 

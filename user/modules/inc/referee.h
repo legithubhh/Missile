@@ -212,11 +212,11 @@ typedef struct
 /* 飞镖发射相关数据dart_info位0-15对应数据 */
 typedef struct
 {
-    uint8_t dart_info_hitted_target;  // bit 0-1，对方最近一次被击中的目标，开局默认为 0，1 为击中前哨站，2 为击中基地固定目标，3 为击中基地随机目标
-    uint8_t dart_info_hitted_count;   // bit 2-4，对方最近被击中的目标累计被击中计数，开局默认为 0，至多为 4
-    uint8_t dart_info_attack_target;//bit 5-6,飞镖此时选定的击打目标，开局默认或未选定/选定前哨站时为 0，选中基地固定目标为 1，选中基地随机目标为 2
-    uint8_t reserved;//bit 7-15,保留
-    uint8_t dart_info_last_attack_target;//自己加的,飞镖上一次击打的目标，开局默认为 0，前哨站为0，基地固定目标为1，基地随机目标为2
+    uint8_t dart_info_hitted_target;       // bit 0-1，对方最近一次被击中的目标，开局默认为 0，1 为击中前哨站，2 为击中基地固定目标，3 为击中基地随机目标
+    uint8_t dart_info_hitted_count;        // bit 2-4，对方最近被击中的目标累计被击中计数，开局默认为 0，至多为 4
+    uint8_t dart_info_attack_target;       // bit 5-6,飞镖此时选定的击打目标，开局默认或未选定/选定前哨站时为 0，选中基地固定目标为 1，选中基地随机目标为 2
+    uint8_t reserved;                      // bit 7-15,保留
+    uint8_t dart_info_last_attack_target;  // 自己加的,飞镖上一次击打的目标，开局默认为 0，前哨站为0，基地固定目标为1，基地随机目标为2
 } ext_dart_info_info_t;
 
 /* ID: 0X0201  Byte: 27    机器人状态数据 */

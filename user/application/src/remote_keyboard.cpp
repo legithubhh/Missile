@@ -71,16 +71,16 @@ void ModeTask()
     }
 }
 
-void RemoteShootTarget0Ctrl()  // 目标为前哨站
+void RemoteShootTarget0Ctrl()  // 目标为前哨站13.2m/s
 {
-    shoot.SetFricLevel2Speed(20.f * 60.f);  //(n*60)即n转每秒
-    shoot.SetFricLevel1Speed(10.f * 60.f);
+    shoot.SetFricLevel2Speed(75.f * 60.f);  //(n*60)即n转每秒
+    shoot.SetFricLevel1Speed(42.f * 60.f);
 }
 
 void RemoteShootTarget1Ctrl()  // 目标为基地固定目标
 {
-    shoot.SetFricLevel2Speed(30.f * 60.f);
-    shoot.SetFricLevel1Speed(20.f * 60.f);
+    shoot.SetFricLevel2Speed(100.f * 60.f);
+    shoot.SetFricLevel1Speed(70.f * 60.f);
 }
 
 void StopFricCtrl()
@@ -90,7 +90,7 @@ void StopFricCtrl()
 }
 
 /**
- * @brief      比赛模式控制飞镖发射
+ * @brief      遥控器模拟裁判系统控制飞镖发射
  *   @arg       None
  * @retval      None
  * @note
@@ -122,16 +122,16 @@ void DartStateControl()
                 break;
             }
         }
-        /*如果只打基地，建议注销以下代码，无需切换，瞄准基地固定目标打就行*/
-        if (referee.dart_info_info_.dart_info_attack_target == 0 && referee.dart_info_info_.dart_info_last_attack_target == 1)  // 基地固定目标切换前哨站
-        {
-            YawDirSet(0);  // 发射架Y轴的步进电机
-            StartYawPulse(1, 500);
-            referee.dart_info_info_.dart_info_last_attack_target = referee.dart_info_info_.dart_info_attack_target;
-        } else if (referee.dart_info_info_.dart_info_attack_target == 1 && referee.dart_info_info_.dart_info_last_attack_target == 0)  // 前哨站切换基地固定目标
-        {
-            YawDirSet(1);  // 发射架Y轴的步进电机
-            StartYawPulse(1, 500);
+        /*如果只打基地，可以注销以下代码，无需切换，瞄准基地固定目标打就行*/
+        if (referee.dart_info_info_.dart_info_attack_target != referee.dart_info_info_.dart_info_last_attack_target) {
+            if (referee.dart_info_info_.dart_info_attack_target == 0) {  // 基地固定目标切换前哨站
+                YawDirSet(0);                                            // 发射架Y轴的步进电机
+                StartYawPulse(1, 500);
+            }
+            if (referee.dart_info_info_.dart_info_attack_target == 1) {  // 前哨站切换基地固定目标
+                YawDirSet(1);                                            // 发射架Y轴的步进电机
+                StartYawPulse(1, 500);
+            }
             referee.dart_info_info_.dart_info_last_attack_target = referee.dart_info_info_.dart_info_attack_target;
         }
     }

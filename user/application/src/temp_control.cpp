@@ -39,12 +39,12 @@ void TempTask(void)
         // Code to check if the state has been continuous for 1 second
         DWT_Delay(1.f);
         if (temperature.GetTemp1() < 30.f || temperature.GetTemp2() < 30.f) {
-            // If true, set the IO port PI7 high
+            // If true, set the IO port PE9 high
             HAL_GPIO_WritePin(TEMP_CONTROL_GPIO_Port, TEMP_CONTROL_Pin, GPIO_PIN_SET);
         }
     } else {
         DWT_Delay(1.f);
-        // If false, set the IO port PI7 low
+        // If false, set the IO port PE9 low
         if (temperature.GetTemp1() > 30.f || temperature.GetTemp2() > 30.f) {
             HAL_GPIO_WritePin(TEMP_CONTROL_GPIO_Port, TEMP_CONTROL_Pin, GPIO_PIN_RESET);
         }

@@ -34,14 +34,14 @@ static void Right2FricMotorCallback();
  */
 void Shoot::PidInit()
 {
-    fric_speed_[0].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
-    fric_speed_[1].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
-    fric_speed_[2].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
-    fric_speed_[3].Init(20.0f, 0.0f, 0.0f, 7500.0f, 0.0f);
-    fric_speed_[0].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[1].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[2].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[3].Inprovement(PID_IMPROVE_NONE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[0].Init(3.f, 0.5f, 0.f, 8000.0f, 0.0f);
+    fric_speed_[1].Init(3.f, 0.5f, 0.f, 8000.0f, 0.0f);
+    fric_speed_[2].Init(3.f, 0.5f, 0.f, 8000.0f, 0.0f);
+    fric_speed_[3].Init(3.f, 0.5f, 0.f, 8000.0f, 0.0f);
+    fric_speed_[0].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[1].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[2].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[3].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 /**

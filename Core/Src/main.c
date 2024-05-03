@@ -104,7 +104,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
     DWT_Init(168);
     InfantrySystemInit();
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

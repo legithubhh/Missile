@@ -53,21 +53,6 @@ void Referee::Update(uint8_t *_p_data)
                         memcpy(&game_state_, (_p_data + DATA), LEN_game_state);
                         break;
 
-                    case ID_game_result:  // 0x0002
-                        memcpy(&game_result_, (_p_data + DATA), LEN_game_result);
-                        break;
-
-                    case ID_game_robot_survivors:  // 0x0003
-                        memcpy(&game_robot_HP_, (_p_data + DATA), LEN_game_robot_HP);
-                        break;
-
-                    case ID_event_data:  // 0x0101
-                        memcpy(&event_data_, (_p_data + DATA), LEN_event_data);
-                        break;
-
-                    case ID_supply_projectile_action:  // 0x0102
-                        memcpy(&supply_projectile_action_, (_p_data + DATA), LEN_supply_projectile_action);
-                        break;
                     case ID_dart_info:  // 0x0105
                         memcpy(&dart_info_, (_p_data + DATA), LEN_dart_info);
                         dart_info_info_.dart_info_attack_target = dart_info_.dart_info & 0x0048;//dart_info的bit 5-6对应飞镖此时选定的击打目标
@@ -75,18 +60,6 @@ void Referee::Update(uint8_t *_p_data)
 
                     case ID_game_robot_state:  // 0x0201
                         memcpy(&game_robot_state_, (_p_data + DATA), LEN_game_robot_state);
-                        break;
-
-                    case ID_power_heat_data:  // 0x0202
-                        memcpy(&power_heat_data_, (_p_data + DATA), LEN_power_heat_data);
-                        break;
-
-                    case ID_game_robot_pos:  // 0x0203
-                        memcpy(&game_robot_pos_, (_p_data + DATA), LEN_game_robot_pos);
-                        break;
-
-                    case ID_buff_musk:  // 0x0204
-                        memcpy(&buff_musk_, (_p_data + DATA), LEN_buff_musk);
                         break;
 
                     case ID_aerial_robot_support_data:  // 0x0205
@@ -112,11 +85,11 @@ void Referee::Update(uint8_t *_p_data)
                 }
             }
         }
-        // 首地址加帧长度,指向CRC16下一字节,用来判断是否为0xA5,从而判断一个数据包是否有多帧数据
-        if (*(_p_data + sizeof(xFrameHeader) + LEN_CMDID + FrameHeader.DataLength + LEN_TAIL) == 0xA5) {
-            // 如果一个数据包出现了多帧数据,则再次调用解析函数,直到所有数据包解析完毕
-            Update(_p_data + sizeof(xFrameHeader) + LEN_CMDID + FrameHeader.DataLength + LEN_TAIL);
-        }
+        // // 首地址加帧长度,指向CRC16下一字节,用来判断是否为0xA5,从而判断一个数据包是否有多帧数据
+        // if (*(_p_data + sizeof(xFrameHeader) + LEN_CMDID + FrameHeader.DataLength + LEN_TAIL) == 0xA5) {
+        //     // 如果一个数据包出现了多帧数据,则再次调用解析函数,直到所有数据包解析完毕
+        //     Update(_p_data + sizeof(xFrameHeader) + LEN_CMDID + FrameHeader.DataLength + LEN_TAIL);
+        // }
     }
 }
 
