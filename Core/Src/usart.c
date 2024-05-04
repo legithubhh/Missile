@@ -389,7 +389,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 
 /* USER CODE BEGIN 1 */
 /**
- * @brief       用串�?1重定向printf
+ * @brief       用串�??1重定向printf
  * @param       ch:
  * @param       f:
  *   @arg       None
@@ -399,7 +399,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 // int fputc(int ch, FILE* f)
 // {
 //     uint8_t temp[1] = {ch};
-//     HAL_UART_Transmit(&huart1, temp, 1, 10);  // huart1�?要根据你的配置修�?
+//     HAL_UART_Transmit(&huart1, temp, 1, 10);  // huart1�??要根据你的配置修�??
 //     return ch;
 // }
 

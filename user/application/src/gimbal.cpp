@@ -25,7 +25,7 @@
 /* Private function prototypes -----------------------------------------------*/
 
 /**
- * @brief      控制Pitch轴的脉冲输出，2ms一个脉冲，2ms>1.2us(最小脉宽)
+ * @brief      控制Pitch轴的脉冲输出，2ms一个脉冲，2ms>2.5us(最小脉宽)
  * @param       _step:脉冲输出个数
  *   @arg       None
  * @retval      None
@@ -94,7 +94,7 @@ void PushDirSet(uint8_t _dir)
 
 /**
  * @brief      PWM输出控制推杆脉冲
- * @param       _xpwm:飞镖脉冲占空比_xpwm/50（不影响速度，保证高低电平脉宽>1.2us即可）
+ * @param       _xpwm:飞镖脉冲占空比_xpwm/50（不影响速度，保证高低电平脉宽>2.5us即可）
  *   @arg       None
  * @retval      None
  * @note        None

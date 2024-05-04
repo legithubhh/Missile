@@ -3,27 +3,30 @@ GraphedExpression="((shoot).fric_speed_[2]).measure_", Color=#a00909
 GraphedExpression="((shoot).fric_speed_[2]).d_out_", Color=#09a01b
 GraphedExpression="((shoot).fric_speed_[2]).p_out_", Color=#09a087
 GraphedExpression="((shoot).fric_speed_[2]).i_out_", Color=#0984a0
-GraphedExpression="((shoot).fric_speed_[2]).output_", Color=#0964a0
+GraphedExpression="((shoot).fric_speed_[0]).measure_", Color=#0964a0
+GraphedExpression="((shoot).fric_speed_[1]).measure_", Color=#094fa0
+GraphedExpression="((shoot).fric_speed_[3]).measure_", Color=#0940a0
 OpenDocument="startup_stm32f407ighx.s", FilePath="C:/Users/le_lianxiang/Desktop/Missile/Core/Startup/startup_stm32f407ighx.s", Line=44
 OpenDocument="temp_measure.h", FilePath="C:/Users/le_lianxiang/Desktop/Missile/user/modules/inc/temp_measure.h", Line=0
 OpenDocument="main.c", FilePath="C:/Users/le_lianxiang/Desktop/Missile/Core/Src/main.c", Line=58
 OpenToolbar="Debug", Floating=0, x=0, y=0
-OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=370, h=389, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Global Data", DockArea=LEFT, x=0, y=2, w=370, h=457, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Watched Data 1", DockArea=RIGHT, x=0, y=0, w=1398, h=373, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=370, h=391, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Global Data", DockArea=LEFT, x=0, y=2, w=370, h=455, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=RIGHT, x=0, y=0, w=1398, h=375, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
 OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=370, h=408, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
 OpenWindow="Terminal", DockArea=BOTTOM, x=0, y=0, w=880, h=177, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
-OpenWindow="Data Sampling", DockArea=RIGHT, x=0, y=2, w=1398, h=367, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
-OpenWindow="Timeline", DockArea=RIGHT, x=0, y=1, w=1398, h=514, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="1 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="953;34", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1171;0", CodeGraphLegendShown=0, CodeGraphLegendPosition="1187;0"
+OpenWindow="Data Sampling", DockArea=RIGHT, x=0, y=2, w=1398, h=369, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=RIGHT, x=0, y=1, w=1398, h=510, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="1 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="953;34", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="968;-69", CodeGraphLegendShown=0, CodeGraphLegendPosition="984;0"
 OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=1679, h=177, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
 TableHeader="Global Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Access";"Scope"], ColWidths=[189;100;102;100;100;0;366]
 TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Class";"Source"], ColWidths=[720;100;100;100;27;286]
 TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[168;100;100;100;974]
-TableHeader="Data Sampling Table", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time"], ColWidths=[100;100]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" ((shoot).fric_speed_[2]).measure_";" ((shoot).fric_speed_[2]).d_out_";" ((shoot).fric_speed_[2]).p_out_";" ((shoot).fric_speed_[2]).i_out_";" ((shoot).fric_speed_[0]).measure_";" ((shoot).fric_speed_[1]).measure_";" ((shoot).fric_speed_[3]).measure_"], ColWidths=[100;100;100;100;100;100;100;100;100]
 TableHeader="Data Sampling Setup", SortCol="Max. Change", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[278;100;100;100;100;100;110;126;384]
 TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
 TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh";"Access"], ColWidths=[301;221;131;745;100]
 TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[27;27;27;26]
 WatchedExpression="((shoot).fric_motor_[0]).temp_", RefreshRate=5, Window=Watched Data 1
 WatchedExpression="((shoot).fric_motor_[1]).temp_", RefreshRate=5, Window=Watched Data 1
 WatchedExpression="((shoot).fric_motor_[2]).temp_", RefreshRate=5, Window=Watched Data 1
