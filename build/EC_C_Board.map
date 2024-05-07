@@ -4774,7 +4774,7 @@ LOAD i:/cubemxandvscode/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/th
  .debug_ranges  0x00001c58       0x20 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj
  .debug_ranges  0x00001c78       0x38 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj
 
-.debug_line     0x00000000    0x225d0
+.debug_line     0x00000000    0x225d1
  .debug_line    0x00000000      0x5fe CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj
  .debug_line    0x000005fe      0x1e7 CMakeFiles/EC_C_Board.elf.dir/Core/Src/dma.c.obj
  .debug_line    0x000007e5      0x587 CMakeFiles/EC_C_Board.elf.dir/Core/Src/freertos.c.obj
@@ -4817,16 +4817,16 @@ LOAD i:/cubemxandvscode/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/th
  .debug_line    0x0001dc6a      0x7b8 CMakeFiles/EC_C_Board.elf.dir/user/algorithm/src/pid.cpp.obj
  .debug_line    0x0001e422      0x497 CMakeFiles/EC_C_Board.elf.dir/user/application/src/gimbal.cpp.obj
  .debug_line    0x0001e8b9      0x8f8 CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.obj
- .debug_line    0x0001f1b1      0x7fc CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj
- .debug_line    0x0001f9ad      0x92a CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj
- .debug_line    0x000202d7      0x39d CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj
- .debug_line    0x00020674      0x494 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj
- .debug_line    0x00020b08      0x436 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj
- .debug_line    0x00020f3e      0x3c0 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj
- .debug_line    0x000212fe      0x40f CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj
- .debug_line    0x0002170d      0x433 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.obj
- .debug_line    0x00021b40      0x3fd CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj
- .debug_line    0x00021f3d      0x693 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj
+ .debug_line    0x0001f1b1      0x7fd CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj
+ .debug_line    0x0001f9ae      0x92a CMakeFiles/EC_C_Board.elf.dir/user/application/src/shoot.cpp.obj
+ .debug_line    0x000202d8      0x39d CMakeFiles/EC_C_Board.elf.dir/user/application/src/temp_control.cpp.obj
+ .debug_line    0x00020675      0x494 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_can.c.obj
+ .debug_line    0x00020b09      0x436 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_dwt.c.obj
+ .debug_line    0x00020f3f      0x3c0 CMakeFiles/EC_C_Board.elf.dir/user/bsp/src/bsp_uart.c.obj
+ .debug_line    0x000212ff      0x40f CMakeFiles/EC_C_Board.elf.dir/user/modules/src/dji_motor.cpp.obj
+ .debug_line    0x0002170e      0x433 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/referee.cpp.obj
+ .debug_line    0x00021b41      0x3fd CMakeFiles/EC_C_Board.elf.dir/user/modules/src/remote.cpp.obj
+ .debug_line    0x00021f3e      0x693 CMakeFiles/EC_C_Board.elf.dir/user/modules/src/temp_measure.cpp.obj
 
 .debug_str      0x00000000     0xbccf
  .debug_str     0x00000000      0xb8d CMakeFiles/EC_C_Board.elf.dir/Core/Src/can.c.obj

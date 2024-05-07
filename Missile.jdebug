@@ -4,8 +4,8 @@
 *                         www.segger.com                             *
 **********************************************************************
 
-File          : C:/Users/le_lianxiang/Desktop/Missile/EC_C_Board.jdebug
-Created       : 29 Feb 2024 17:21
+File          : C:/Users/le_lianxiang/Desktop/Missile/Missile.jdebug
+Created       : 6 May 2024 19:58
 Ozone Version : V3.24
 */
 
@@ -25,15 +25,15 @@ void OnProjectLoad (void) {
   Project.AddPathSubstitute ("C:/Users/le_lianxiang/Desktop/Missile", "$(ProjectDir)");
   Project.AddPathSubstitute ("c:/users/le_lianxiang/desktop/missile", "$(ProjectDir)");
   Project.SetDevice ("Cortex-M4");
-  Project.SetHostIF ("USB", "1040849617");
+  Project.SetHostIF ("USB", "1046685341");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
   Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M4F.svd");
-  Project.AddSvdFile ("$(InstallDir)/Config/Peripherals/STM32F407IG.svd");
+  Project.AddSvdFile ("$(InstallDir)/Config/Peripherals/STM32F427x.svd");
   //
   // User settings
   //
-  Edit.SysVar (VAR_HSS_SPEED, FREQ_5_KHZ);
+  Edit.SysVar (VAR_HSS_SPEED, BP_STATE_OFF);
   File.Open ("$(ProjectDir)/build/EC_C_Board.elf");
 }
 

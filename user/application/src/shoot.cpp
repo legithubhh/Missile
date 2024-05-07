@@ -34,14 +34,14 @@ static void Right2FricMotorCallback();
  */
 void Shoot::PidInit()
 {
-    fric_speed_[0].Init(2.f, 0.5f, 0.05f, 5000.0f, 0.0f);
-    fric_speed_[1].Init(1.5f, 0.5f, 0.03f, 5000.0f, 0.0f);
-    fric_speed_[2].Init(2.f, 0.5f, 0.05f, 5000.0f, 0.0f);
-    fric_speed_[3].Init(1.5f, 0.5f, 0.03f, 5000.0f, 0.0f);
-    fric_speed_[0].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[1].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[2].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-    fric_speed_[3].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 100.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[0].Init(2.f, 1.f, 0.02f, 5000.0f, 0.0f);
+    fric_speed_[1].Init(1.5f, 1.f, 0.01f, 5000.0f, 0.0f);
+    fric_speed_[2].Init(2.f, 1.f, 0.02f, 5000.0f, 0.0f);
+    fric_speed_[3].Init(1.5f, 1.f, 0.01f, 5000.0f, 0.0f);  // 目标速度越大，静态速度波动越小，推测比例环影响较大，如果减小比例对飞镖射出瞬间速度无影响，可考虑根据击打目标转换PID
+    fric_speed_[0].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 60.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[1].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 60.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[2].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 60.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+    fric_speed_[3].Inprovement(PID_TRAPEZOID_INTEGRAL | PID_INTEGRAL_LIMIT, 60.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 /**

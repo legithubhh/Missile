@@ -50,7 +50,7 @@ void ModeTask()
 
     if (remote.GetS2() == 1)  // 测试模式，打开摩擦轮
     {
-        RemoteShootTarget0Ctrl();
+        RemoteShootTarget1Ctrl();
     }
 
     if (remote.GetS2() == 2)  // 关闭摩擦轮
@@ -59,6 +59,7 @@ void ModeTask()
 
     } else if (remote.GetS2() == 3 && fri_flag == 1)  // 裁判系统，打开摩擦轮
     {
+        referee.dart_info_info_.dart_info_attack_target == 1;  // 测试用
         if (referee.dart_info_info_.dart_info_attack_target == 0) {
             RemoteShootTarget0Ctrl();
         } else if (referee.dart_info_info_.dart_info_attack_target == 1) {
@@ -73,14 +74,16 @@ void ModeTask()
 
 void RemoteShootTarget0Ctrl()  // 目标为前哨站13.2m/s
 {
-    shoot.SetFricLevel2Speed(75.f * 60.f);  //(n*60)即n转每秒
-    shoot.SetFricLevel1Speed(42.f * 60.f);
+    shoot.SetFricLevel2Speed(100.f * 60.f);  //(n*60)即n转每秒
+    shoot.SetFricLevel1Speed(70.f * 60.f);
+    // shoot.SetFricLevel2Speed(75.f * 60.f);  //(n*60)即n转每秒
+    // shoot.SetFricLevel1Speed(42.f * 60.f);
 }
 
 void RemoteShootTarget1Ctrl()  // 目标为基地固定目标
 {
-    shoot.SetFricLevel2Speed(100.f * 60.f);
-    shoot.SetFricLevel1Speed(70.f * 60.f);
+    shoot.SetFricLevel2Speed(105.f * 60.f);
+    shoot.SetFricLevel1Speed(85.f * 60.f);
 }
 
 void StopFricCtrl()
