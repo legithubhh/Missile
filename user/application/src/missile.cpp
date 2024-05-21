@@ -41,8 +41,8 @@ void RotationControl();
 void InfantrySystemInit()
 {
     RemoteControlInit(&huart3);
-    TemperatureMeasureInit(&huart1);
-    referee.Init(&huart6);
+    TemperatureMeasureInit(&huart6);  // 现在用的C板串口UART1坏。
+    referee.Init(&huart1);
     shoot.MotorInit();
 }
 
@@ -91,19 +91,19 @@ void ServoControl()  // 丝杆步进电机
     } else if (remote.GetS2() == 3 && fashe_flag == 1) {
         PushDirSet(0);  // 前进
         DWT_Delay(1e-3);
-        SetPushPWM(25);
+        SetPushPWM(150);
         // 加个计时函数
         time_real = DWT_GetTimeline_ms();
-        // 约3.5秒一发，暂停约5s，让摩擦轮恢复状态，留出装甲板判断击打的空窗期，尽量吃满增益。
-        if (time_real - time_this > 3200 && time_real - time_this < 7500) {
+        // 约5秒一发，暂停约4s，让摩擦轮恢复状态，留出装甲板判断击打的空窗期，尽量吃满增益。第一发2秒，第二发5秒，预装载3秒；
+        if (time_real - time_this > 2000 && time_real - time_this < 6000) {
             SetPushPWM(0);
         }
-        if (time_real - time_this > 7500 && time_real - time_this < 10700) {
+        if (time_real - time_this > 6000 && time_real - time_this < 13000) {
             PushDirSet(0);  // 前进
             DWT_Delay(1e-3);
             SetPushPWM(150);
         }
-        if (time_real - time_this > 10700) {
+        if (time_real - time_this > 13000) {
             SetPushPWM(0);
         }
     } else {
@@ -113,21 +113,20 @@ void ServoControl()  // 丝杆步进电机
 
 void RotationControl()
 {
-
-        if (remote.GetCh1() > 656 && remote.GetCh3() > 656) {
-            PitchDirSet(0);  // 发射架P轴的步进电机
-            StartPitchPulse(1, 100);
-        } else if (remote.GetCh1() < -656 && remote.GetCh3() < -656) {
-            PitchDirSet(1);
-            StartPitchPulse(1, 100);
-        }
-        if (remote.GetCh0() > 656 && remote.GetCh2() > 656) {
-            YawDirSet(0);  // 发射架Y轴的步进电机
-            DWT_Delay(1e-3);
-            StartYawPulse(1, 100);
-        } else if (remote.GetCh0() < -656 && remote.GetCh2() < -656) {
-            YawDirSet(1);
-            DWT_Delay(1e-3);
-            StartYawPulse(1, 100);
-        }
+    if (remote.GetCh1() > 656 && remote.GetCh3() > 656) {
+        PitchDirSet(0);  // 发射架P轴的步进电机
+        StartPitchPulse(1, 100);
+    } else if (remote.GetCh1() < -656 && remote.GetCh3() < -656) {
+        PitchDirSet(1);
+        StartPitchPulse(1, 100);
+    }
+    if (remote.GetCh0() > 656 && remote.GetCh2() > 656) {
+        YawDirSet(0);  // 发射架Y轴的步进电机
+        DWT_Delay(1e-3);
+        StartYawPulse(1, 100);
+    } else if (remote.GetCh0() < -656 && remote.GetCh2() < -656) {
+        YawDirSet(1);
+        DWT_Delay(1e-3);
+        StartYawPulse(1, 100);
+    }
 }

@@ -61,7 +61,7 @@ void Temperature_t::Update(uint8_t *_pdata)
 
 void Temperature_t::ReceiveDate()
 {
-    UartSendData(&huart1, tx_buffer_, 0x08, UART_TRAMSMIT_BLOCKING);
+    UartSendData(&huart6, tx_buffer_, 0x08, UART_TRAMSMIT_BLOCKING);
     DWT_Delay(0.1f);
 }
 

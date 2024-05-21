@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define PUSH_DIR_GPIO_Port GPIOI
 #define YAW_DIR_Pin GPIO_PIN_6
 #define YAW_DIR_GPIO_Port GPIOI
+#define LASER_Pin GPIO_PIN_8
+#define LASER_GPIO_Port GPIOC
 #define YAW_PUL_Pin GPIO_PIN_6
 #define YAW_PUL_GPIO_Port GPIOC
 #define LED_R_Pin GPIO_PIN_12
@@ -77,6 +79,8 @@ void Error_Handler(void);
 #define TEMP_CONTROL_GPIO_Port GPIOE
 #define PITCH_PUL_Pin GPIO_PIN_11
 #define PITCH_PUL_GPIO_Port GPIOE
+#define PUSH_PUL_Pin GPIO_PIN_14
+#define PUSH_PUL_GPIO_Port GPIOE
 #define CS1_GYRO_Pin GPIO_PIN_0
 #define CS1_GYRO_GPIO_Port GPIOB
 

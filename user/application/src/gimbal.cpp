@@ -35,7 +35,7 @@ void PitchOneStepSET(uint16_t _step)
 {
     int cnt;
     for (cnt = _step; cnt != 0; cnt--) {
-        HAL_GPIO_WritePin(PITCH_PUL_GPIO_Port, PITCH_PUL_Pin, GPIO_PIN_SET);  // PE9
+        HAL_GPIO_WritePin(PITCH_PUL_GPIO_Port, PITCH_PUL_Pin, GPIO_PIN_SET);  // PE11
         DWT_Delay(1e-3);
         HAL_GPIO_WritePin(PITCH_PUL_GPIO_Port, PITCH_PUL_Pin, GPIO_PIN_RESET);
         DWT_Delay(1e-3);
@@ -68,7 +68,7 @@ void StartPitchPulse(uint8_t _r, uint16_t _step)
 void PitchDirSet(uint8_t _dir)
 {
     if (_dir == 1) {
-        HAL_GPIO_WritePin(PITCH_DIR_GPIO_Port, PITCH_DIR_Pin, GPIO_PIN_SET);  // PE11
+        HAL_GPIO_WritePin(PITCH_DIR_GPIO_Port, PITCH_DIR_Pin, GPIO_PIN_SET);  // PE13
     } else if (_dir == 0) {
         HAL_GPIO_WritePin(PITCH_DIR_GPIO_Port, PITCH_DIR_Pin, GPIO_PIN_RESET);
     } else {
@@ -85,7 +85,7 @@ void PitchDirSet(uint8_t _dir)
 void PushDirSet(uint8_t _dir)
 {
     if (_dir == 1) {
-        HAL_GPIO_WritePin(PUSH_DIR_GPIO_Port, PUSH_DIR_Pin, GPIO_PIN_SET);  // PI6
+        HAL_GPIO_WritePin(PUSH_DIR_GPIO_Port, PUSH_DIR_Pin, GPIO_PIN_SET);  // PI7
     } else if (_dir == 0) {
         HAL_GPIO_WritePin(PUSH_DIR_GPIO_Port, PUSH_DIR_Pin, GPIO_PIN_RESET);
     } else {
@@ -101,7 +101,7 @@ void PushDirSet(uint8_t _dir)
  */
 void SetPushPWM(uint16_t _xpwm)
 {
-    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, _xpwm);
+    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, _xpwm);//PE14
 }
 
 /**
@@ -111,7 +111,7 @@ void YawOneStepSET(uint16_t _step)
 {
     int cnt;
     for (cnt = _step; cnt != 0; cnt--) {
-        HAL_GPIO_WritePin(YAW_PUL_GPIO_Port, YAW_PUL_Pin, GPIO_PIN_SET);  // PE14
+        HAL_GPIO_WritePin(YAW_PUL_GPIO_Port, YAW_PUL_Pin, GPIO_PIN_SET);  // PC6
         DWT_Delay(1e-3);
         HAL_GPIO_WritePin(YAW_PUL_GPIO_Port, YAW_PUL_Pin, GPIO_PIN_RESET);
         DWT_Delay(1e-3);
@@ -135,7 +135,7 @@ void StartYawPulse(uint8_t r, uint16_t _step)
 void YawDirSet(uint8_t dir)
 {
     if (dir == 1) {
-        HAL_GPIO_WritePin(YAW_DIR_GPIO_Port, YAW_DIR_Pin, GPIO_PIN_SET);  // PC6
+        HAL_GPIO_WritePin(YAW_DIR_GPIO_Port, YAW_DIR_Pin, GPIO_PIN_SET);  // PI6
     } else if (dir == 0) {
         HAL_GPIO_WritePin(YAW_DIR_GPIO_Port, YAW_DIR_Pin, GPIO_PIN_RESET);
     } else {

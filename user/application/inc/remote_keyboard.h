@@ -31,6 +31,7 @@ extern float time_this;
 extern float time_real;
 /* Exported function prototypes ----------------------------------------------*/
 void ModeTask();
+void DoorInit();
 
 #ifdef __cplusplus
 }

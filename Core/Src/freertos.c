@@ -187,6 +187,7 @@ void StartGimbalTask(void const * argument)
 void StartModeTask(void const * argument)
 {
   /* USER CODE BEGIN StartModeTask */
+    DoorInit();//初始化飞镖状态为关闭；
     /* Infinite loop */
     for (;;) {
         ModeTask();

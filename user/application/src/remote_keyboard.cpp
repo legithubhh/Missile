@@ -83,7 +83,7 @@ void RemoteShootTarget0Ctrl()  // 目标为前哨站13.2m/s
 void RemoteShootTarget1Ctrl()  // 目标为基地固定目标
 {
     shoot.SetFricLevel2Speed(105.f * 60.f);
-    shoot.SetFricLevel1Speed(85.f * 60.f);
+    shoot.SetFricLevel1Speed(84.f * 60.f);
 }
 
 void StopFricCtrl()
@@ -157,4 +157,10 @@ void DartStateControl()
             time_this = DWT_GetTimeline_ms();
         }
     }
+}
+
+// 初始化飞镖状态为关闭；
+void DoorInit()
+{
+    referee.dart_client_cmd_.dart_launch_opening_status = 1;
 }
