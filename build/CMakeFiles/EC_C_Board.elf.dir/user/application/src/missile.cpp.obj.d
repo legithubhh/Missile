@@ -44,12 +44,12 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/missile.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/gimbal.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/remote.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_uart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/remote.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/remote_keyboard.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/shoot.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/dji_motor.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_can.h \

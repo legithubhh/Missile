@@ -10,8 +10,8 @@
  * s1:1       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆连续前移。
  * s1:3       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆连续后退。
  * s1:2       s2:1      测试模式：打开摩擦轮，默认目标为前哨站。推杆停止。
- * s1:1       s2:3      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆间断以一定距离前移两次。
- * s1:3       s2:3      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆停止。
+ * s1:1       s2:3      裁判系统模式：打开摩擦轮，默认目标为前哨站。推杆间断以一定距离前移两次。一定切换目标为基地固定目标！！！
+ * s1:3       s2:3      裁判系统模式：打开摩擦轮蓄能，默认目标为前哨站。推杆停止。
  * s1:2       s2:3      裁判系统模式：关闭摩擦轮，默认目标为前哨站。推杆停止。
  * s1:1       s2:2      测试模式：关闭摩擦轮，默认目标为前哨站。推杆连续前移。
  * s1:3       s2:2      测试模式：关闭摩擦轮，默认目标为前哨站。推杆连续后退。
@@ -26,7 +26,6 @@
 
 #include "bsp_dwt.h"
 #include "gimbal.h"
-#include "referee.h"
 #include "remote.h"
 #include "shoot.h"
 /* Private macro -------------------------------------------------------------*/
@@ -38,6 +37,7 @@ uint16_t fashe_flag = 0;
 uint16_t fri_flag = 0;
 float time_this;
 float time_real;
+uint8_t attack_target;
 /* Private function prototypes -----------------------------------------------*/
 void DartStateControl();
 void RemoteShootTarget0Ctrl();
@@ -59,11 +59,11 @@ void ModeTask()
 
     } else if (remote.GetS2() == 3 && fri_flag == 1)  // 裁判系统，打开摩擦轮
     {
-        referee.dart_info_info_.dart_info_attack_target == 1;  // 测试用
-        if (referee.dart_info_info_.dart_info_attack_target == 0) {
-            RemoteShootTarget0Ctrl();
-        } else if (referee.dart_info_info_.dart_info_attack_target == 1) {
+        attack_target == 0;  // 测试用
+        if (attack_target == 0) {
             RemoteShootTarget1Ctrl();
+        } else if (attack_target == 1) {
+            RemoteShootTarget0Ctrl();
         }
 
     } else if (remote.GetS2() == 3 && fri_flag == 0)  // 裁判系统，关闭摩擦轮

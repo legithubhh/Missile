@@ -1,14 +1,9 @@
 CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\src\remote_keyboard.cpp \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/remote_keyboard.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\stdint.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\machine\_default_types.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\features.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
- i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_stdint.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_uart.h \
+ C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/stm32f4xx_hal_conf.h \
@@ -17,6 +12,13 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f4xx.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f407xx.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Include/core_cm4.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\stdint.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\machine\_default_types.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\features.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
+ i:\cubemxandvscode\gcc-arm-none-eabi\arm-none-eabi\include\sys\_stdint.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Include/cmsis_version.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Include/cmsis_compiler.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\CMSIS\Include/cmsis_gcc.h \
@@ -43,11 +45,9 @@ CMakeFiles/EC_C_Board.elf.dir/user/application/src/remote_keyboard.cpp.obj: \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_ll_usb.h \
  C:\Users\le_lianxiang\Desktop\Missile\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pcd_ex.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/gimbal.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/referee.h \
- C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_uart.h \
- C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/usart.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\bsp\inc/bsp_dwt.h \
  C:\Users\le_lianxiang\Desktop\Missile\Core\Inc/main.h \
+ C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/gimbal.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/remote.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\application\inc/shoot.h \
  C:\Users\le_lianxiang\Desktop\Missile\user\modules\inc/dji_motor.h \

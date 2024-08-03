@@ -21,7 +21,6 @@
 
 #include "bsp_dwt.h"
 #include "gimbal.h"
-#include "referee.h"
 #include "remote.h"
 #include "remote_keyboard.h"
 #include "shoot.h"
@@ -95,15 +94,15 @@ void ServoControl()  // 丝杆步进电机
         // 加个计时函数
         time_real = DWT_GetTimeline_ms();
         // 约5秒一发，暂停约4s，让摩擦轮恢复状态，留出装甲板判断击打的空窗期，尽量吃满增益。第一发2秒，第二发5秒，预装载3秒；
-        if (time_real - time_this > 2000 && time_real - time_this < 6000) {
+        if (time_real - time_this > 2500 && time_real - time_this < 6000) {
             SetPushPWM(0);
         }
-        if (time_real - time_this > 6000 && time_real - time_this < 13000) {
+        if (time_real - time_this > 6000 && time_real - time_this < 14000) {
             PushDirSet(0);  // 前进
             DWT_Delay(1e-3);
             SetPushPWM(150);
         }
-        if (time_real - time_this > 13000) {
+        if (time_real - time_this > 14000) {
             SetPushPWM(0);
         }
     } else {

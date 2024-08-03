@@ -17,6 +17,10 @@
 #define __REMOTE_KEYBOARD_H_
 
 #ifdef __cplusplus
+#include "referee.h"
+#endif
+
+#ifdef __cplusplus
 extern "C" {
 #endif
 
